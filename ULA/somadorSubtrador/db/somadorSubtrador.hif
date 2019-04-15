@@ -1,5 +1,5 @@
-Quartus II
-Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+Quartus II 64-Bit
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
 7
 3700
 OFF
@@ -27,17 +27,17 @@ db|somadorSubtrador.(0).cnf
 # case_insensitive
 # source_file
 abc.bdf
-a9a612de6f9fb52804f8c89114ec53d
+2562d0237bdd25654d489709ca29c30
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
+aBc:inst7
+aBc:inst8
 aBc:inst
-aBc:inst1
-aBc:inst2
-aBc:inst3
+aBc:inst9
 }
 # macro_sequence
 
@@ -50,7 +50,7 @@ db|somadorSubtrador.(1).cnf
 # case_insensitive
 # source_file
 addsub.bdf
-8c62577b35a06960de432bf0221ca25b
+e87f333d31b5bbb0484fa0c96b82c270
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
