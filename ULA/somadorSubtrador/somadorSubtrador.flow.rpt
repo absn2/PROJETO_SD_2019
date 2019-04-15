@@ -1,5 +1,5 @@
 Flow report for somadorSubtrador
-Mon Apr 15 15:48:19 2019
+Mon Apr 15 16:17:03 2019
 Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +-------------------------------+-----------------------------------------------+
-; Flow Status                   ; Successful - Mon Apr 15 15:48:19 2019         ;
+; Flow Status                   ; Successful - Mon Apr 15 16:17:03 2019         ;
 ; Quartus II 64-Bit Version     ; 9.1 Build 350 03/24/2010 SP 2 SJ Full Version ;
 ; Revision Name                 ; somadorSubtrador                              ;
 ; Top-level Entity Name         ; AddSub                                        ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/15/2019 15:48:12 ;
+; Start date & time ; 04/15/2019 16:16:55 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; somadorSubtrador    ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +------------------------------------+---------------------------------+------------------+-------------+----------------+
 ; Assignment Name                    ; Value                           ; Default Value    ; Entity Name ; Section Id     ;
 +------------------------------------+---------------------------------+------------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 229335799397942.155535409218616 ; --               ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 229335799397942.155535581518864 ; --               ; --          ; --             ;
 ; PARTITION_COLOR                    ; 16764057                        ; --               ; AddSub      ; Top            ;
 ; PARTITION_NETLIST_TYPE             ; SOURCE                          ; --               ; AddSub      ; Top            ;
 ; TOP_LEVEL_ENTITY                   ; AddSub                          ; somadorSubtrador ; --          ; --             ;
@@ -91,8 +91,8 @@ applicable agreement for further details.
 ; Analysis & Synthesis    ; 00:00:01     ; 1.0                     ; 339 MB              ; 00:00:01                           ;
 ; Fitter                  ; 00:00:03     ; 1.0                     ; 516 MB              ; 00:00:03                           ;
 ; Assembler               ; 00:00:01     ; 1.0                     ; 338 MB              ; 00:00:01                           ;
-; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 267 MB              ; 00:00:00                           ;
-; Total                   ; 00:00:05     ; --                      ; --                  ; 00:00:05                           ;
+; Classic Timing Analyzer ; 00:00:01     ; 1.0                     ; 267 MB              ; 00:00:00                           ;
+; Total                   ; 00:00:06     ; --                      ; --                  ; 00:00:05                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
