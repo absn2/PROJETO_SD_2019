@@ -1,5 +1,5 @@
 Fitter report for somadorSubtrador
-Mon Apr 15 16:16:59 2019
+Wed Apr 17 18:08:00 2019
 Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
 
 
@@ -64,18 +64,18 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +-------------------------------+-----------------------------------------------+
-; Fitter Status                 ; Successful - Mon Apr 15 16:16:59 2019         ;
+; Fitter Status                 ; Successful - Wed Apr 17 18:08:00 2019         ;
 ; Quartus II 64-Bit Version     ; 9.1 Build 350 03/24/2010 SP 2 SJ Full Version ;
 ; Revision Name                 ; somadorSubtrador                              ;
-; Top-level Entity Name         ; AddSub                                        ;
+; Top-level Entity Name         ; EqualsSystem                                  ;
 ; Family                        ; Stratix II                                    ;
 ; Device                        ; EP2S15F484C3                                  ;
 ; Timing Models                 ; Final                                         ;
 ; Logic utilization             ; < 1 %                                         ;
-;     Combinational ALUTs       ; 6 / 12,480 ( < 1 % )                          ;
+;     Combinational ALUTs       ; 2 / 12,480 ( < 1 % )                          ;
 ;     Dedicated logic registers ; 0 / 12,480 ( 0 % )                            ;
 ; Total registers               ; 0                                             ;
-; Total pins                    ; 14 / 343 ( 4 % )                              ;
+; Total pins                    ; 9 / 343 ( 3 % )                               ;
 ; Total virtual pins            ; 0                                             ;
 ; Total block memory bits       ; 0 / 419,328 ( 0 % )                           ;
 ; DSP block 9-bit elements      ; 0 / 96 ( 0 % )                                ;
@@ -91,6 +91,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------------------+--------------------------------+
 ; Device                                                                     ; AUTO                           ;                                ;
 ; Fit Attempts to Skip                                                       ; 0                              ; 0.0                            ;
+; Optimize Multi-Corner Timing                                               ; On                             ; Off                            ;
 ; Use smart compilation                                                      ; Off                            ; Off                            ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                             ; On                             ;
 ; Enable compact report table                                                ; Off                            ; Off                            ;
@@ -100,7 +101,6 @@ applicable agreement for further details.
 ; Router Effort Multiplier                                                   ; 1.0                            ; 1.0                            ;
 ; Always Enable Input Buffers                                                ; Off                            ; Off                            ;
 ; Optimize Hold Timing                                                       ; IO Paths and Minimum TPD Paths ; IO Paths and Minimum TPD Paths ;
-; Optimize Multi-Corner Timing                                               ; Off                            ; Off                            ;
 ; PowerPlay Power Optimization                                               ; Normal compilation             ; Normal compilation             ;
 ; Optimize Timing                                                            ; Normal compilation             ; Normal compilation             ;
 ; Optimize Timing for ECOs                                                   ; Off                            ; Off                            ;
@@ -158,20 +158,15 @@ applicable agreement for further details.
 +----------+-------------------------------+
 ; Pin Name ; Reason                        ;
 +----------+-------------------------------+
-; Overflow ; Incomplete set of assignments ;
-; S[3]     ; Incomplete set of assignments ;
-; S[2]     ; Incomplete set of assignments ;
-; S[1]     ; Incomplete set of assignments ;
-; S[0]     ; Incomplete set of assignments ;
-; B[2]     ; Incomplete set of assignments ;
-; A/S      ; Incomplete set of assignments ;
+; S        ; Incomplete set of assignments ;
+; A[3]     ; Incomplete set of assignments ;
+; B[3]     ; Incomplete set of assignments ;
 ; A[2]     ; Incomplete set of assignments ;
+; B[2]     ; Incomplete set of assignments ;
 ; A[0]     ; Incomplete set of assignments ;
 ; B[0]     ; Incomplete set of assignments ;
 ; A[1]     ; Incomplete set of assignments ;
 ; B[1]     ; Incomplete set of assignments ;
-; B[3]     ; Incomplete set of assignments ;
-; A[3]     ; Incomplete set of assignments ;
 +----------+-------------------------------+
 
 
@@ -181,8 +176,8 @@ applicable agreement for further details.
 ; Type                    ; Value              ;
 +-------------------------+--------------------+
 ; Placement               ;                    ;
-;     -- Requested        ; 0 / 22 ( 0.00 % )  ;
-;     -- Achieved         ; 0 / 22 ( 0.00 % )  ;
+;     -- Requested        ; 0 / 13 ( 0.00 % )  ;
+;     -- Achieved         ; 0 / 13 ( 0.00 % )  ;
 ;                         ;                    ;
 ; Routing (by Connection) ;                    ;
 ;     -- Requested        ; 0 / 0 ( 0.00 % )   ;
@@ -204,7 +199,7 @@ applicable agreement for further details.
 +----------------+---------+-------------------+-------------------------+-------------------+
 ; Partition Name ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
 +----------------+---------+-------------------+-------------------------+-------------------+
-; Top            ; 22      ; 0                 ; N/A                     ; Source File       ;
+; Top            ; 13      ; 0                 ; N/A                     ; Source File       ;
 +----------------+---------+-------------------+-------------------------+-------------------+
 
 
@@ -234,10 +229,10 @@ Migrate your design from the selected FPGA device and compile for the HardCopy c
 ; Primary Migration Constraint    ;                      ; Package      ; Package      ; Package      ; Package      ; Package       ; Package       ; Package       ;
 ; Package*                        ; FBGA - 484           ; FBGA - 484   ; FBGA - 484   ; FBGA - 672   ; FBGA - 780   ; FBGA - 1020   ; FBGA - 1020   ; FBGA - 1508   ;
 ; Logic                           ; --                   ; 1%           ; 1%           ; 1%           ; 1%           ; 1%            ; 1%            ; 1%            ;
-;   -- Logic cells                ; 6                    ; --           ; --           ; --           ; --           ; --            ; --            ; --            ;
+;   -- Logic cells                ; 2                    ; --           ; --           ; --           ; --           ; --            ; --            ; --            ;
 ;   -- DSP elements               ; 0                    ; --           ; --           ; --           ; --           ; --            ; --            ; --            ;
 ; Pins                            ;                      ;              ;              ;              ;              ;               ;               ;               ;
-;   -- Total                      ; 14                   ; 14 / 309     ; 14 / 335     ; 14 / 493     ; 14 / 495     ; 14 / 699      ; 14 / 743      ; 14 / 952      ;
+;   -- Total                      ; 9                    ; 9 / 309      ; 9 / 335      ; 9 / 493      ; 9 / 495      ; 9 / 699       ; 9 / 743       ; 9 / 952       ;
 ;   -- Differential Input         ; 0                    ; 0 / 66       ; 0 / 70       ; 0 / 90       ; 0 / 90       ; 0 / 128       ; 0 / 224       ; 0 / 272       ;
 ;   -- Differential Output        ; 0                    ; 0 / 44       ; 0 / 50       ; 0 / 70       ; 0 / 70       ; 0 / 112       ; 0 / 200       ; 0 / 256       ;
 ;   -- PCI / PCI-X                ; 0                    ; 0 / 159      ; 0 / 166      ; 0 / 244      ; 0 / 246      ; 0 / 358       ; 0 / 366       ; 0 / 471       ;
@@ -266,7 +261,7 @@ Migrate your design from the selected FPGA device and compile for the HardCopy c
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in D:/Users/absn2/Desktop/PROJETO_SD_2019/ULA/somadorSubtrador/somadorSubtrador.pin.
+The pin-out file can be found in D:/Users/afss2/Desktop/PROJETO_SD_2019/ULA/somadorSubtrador.pin.
 
 
 +----------------------------------------------------------------------------------------------------------+
@@ -274,33 +269,33 @@ The pin-out file can be found in D:/Users/absn2/Desktop/PROJETO_SD_2019/ULA/soma
 +-----------------------------------------------------------------------------------+----------------------+
 ; Resource                                                                          ; Usage                ;
 +-----------------------------------------------------------------------------------+----------------------+
-; Combinational ALUTs                                                               ; 6 / 12,480 ( < 1 % ) ;
+; Combinational ALUTs                                                               ; 2 / 12,480 ( < 1 % ) ;
 ; Dedicated logic registers                                                         ; 0 / 12,480 ( 0 % )   ;
 ;                                                                                   ;                      ;
 ; Combinational ALUT usage by number of inputs                                      ;                      ;
 ;     -- 7 input functions                                                          ; 0                    ;
-;     -- 6 input functions                                                          ; 2                    ;
-;     -- 5 input functions                                                          ; 2                    ;
+;     -- 6 input functions                                                          ; 0                    ;
+;     -- 5 input functions                                                          ; 1                    ;
 ;     -- 4 input functions                                                          ; 1                    ;
-;     -- <=3 input functions                                                        ; 1                    ;
+;     -- <=3 input functions                                                        ; 0                    ;
 ;                                                                                   ;                      ;
 ; Combinational ALUTs by mode                                                       ;                      ;
-;     -- normal mode                                                                ; 6                    ;
+;     -- normal mode                                                                ; 2                    ;
 ;     -- extended LUT mode                                                          ; 0                    ;
 ;     -- arithmetic mode                                                            ; 0                    ;
 ;     -- shared arithmetic mode                                                     ; 0                    ;
 ;                                                                                   ;                      ;
-; Logic utilization                                                                 ; 8 / 12,480 ( < 1 % ) ;
+; Logic utilization                                                                 ; 3 / 12,480 ( < 1 % ) ;
 ;     -- Difficulty Clustering Design                                               ; Low                  ;
-;     -- Combinational ALUT/register pairs used in final Placement                  ; 6                    ;
-;         -- Combinational with no register                                         ; 6                    ;
+;     -- Combinational ALUT/register pairs used in final Placement                  ; 2                    ;
+;         -- Combinational with no register                                         ; 2                    ;
 ;         -- Register only                                                          ; 0                    ;
 ;         -- Combinational with a register                                          ; 0                    ;
 ;     -- Estimated pairs recoverable by pairing ALUTs and registers as design grows ; 0                    ;
-;     -- Estimated Combinational ALUT/register pairs unavailable                    ; 2                    ;
+;     -- Estimated Combinational ALUT/register pairs unavailable                    ; 1                    ;
 ;         -- Unavailable due to unpartnered 7 LUTs                                  ; 0                    ;
-;         -- Unavailable due to unpartnered 6 LUTs                                  ; 2                    ;
-;         -- Unavailable due to unpartnered 5 LUTs                                  ; 0                    ;
+;         -- Unavailable due to unpartnered 6 LUTs                                  ; 0                    ;
+;         -- Unavailable due to unpartnered 5 LUTs                                  ; 1                    ;
 ;         -- Unavailable due to LAB-wide signal conflicts                           ; 0                    ;
 ;         -- Unavailable due to LAB input limits                                    ; 0                    ;
 ;                                                                                   ;                      ;
@@ -308,14 +303,14 @@ The pin-out file can be found in D:/Users/absn2/Desktop/PROJETO_SD_2019/ULA/soma
 ;     -- Dedicated logic registers                                                  ; 0 / 12,480 ( 0 % )   ;
 ;     -- I/O registers                                                              ; 0 / 1,930 ( 0 % )    ;
 ;                                                                                   ;                      ;
-; ALMs:  partially or completely used                                               ; 4 / 6,240 ( < 1 % )  ;
+; ALMs:  partially or completely used                                               ; 2 / 6,240 ( < 1 % )  ;
 ;                                                                                   ;                      ;
 ; Total LABs:  partially or completely used                                         ; 1 / 780 ( < 1 % )    ;
 ;                                                                                   ;                      ;
 ; User inserted logic elements                                                      ; 0                    ;
 ; Virtual pins                                                                      ; 0                    ;
-; I/O pins                                                                          ; 14 / 343 ( 4 % )     ;
-;     -- Clock pins                                                                 ; 5 / 16 ( 31 % )      ;
+; I/O pins                                                                          ; 9 / 343 ( 3 % )      ;
+;     -- Clock pins                                                                 ; 0 / 16 ( 0 % )       ;
 ; Global signals                                                                    ; 0                    ;
 ; M512s                                                                             ; 0 / 104 ( 0 % )      ;
 ; M4Ks                                                                              ; 0 / 78 ( 0 % )       ;
@@ -333,12 +328,12 @@ The pin-out file can be found in D:/Users/absn2/Desktop/PROJETO_SD_2019/ULA/soma
 ; Remote update blocks                                                              ; 0 / 1 ( 0 % )        ;
 ; Average interconnect usage (total/H/V)                                            ; 0% / 0% / 0%         ;
 ; Peak interconnect usage (total/H/V)                                               ; 0% / 0% / 0%         ;
-; Maximum fan-out node                                                              ; A/S                  ;
-; Maximum fan-out                                                                   ; 5                    ;
-; Highest non-global fan-out signal                                                 ; A/S                  ;
-; Highest non-global fan-out                                                        ; 5                    ;
-; Total fan-out                                                                     ; 33                   ;
-; Average fan-out                                                                   ; 1.57                 ;
+; Maximum fan-out node                                                              ; inst5~0              ;
+; Maximum fan-out                                                                   ; 1                    ;
+; Highest non-global fan-out signal                                                 ; inst5~0              ;
+; Highest non-global fan-out                                                        ; 1                    ;
+; Total fan-out                                                                     ; 10                   ;
+; Average fan-out                                                                   ; 0.83                 ;
 +-----------------------------------------------------------------------------------+----------------------+
 *  Register count does not include registers inside block RAM or DSP blocks.
 
@@ -349,29 +344,24 @@ The pin-out file can be found in D:/Users/absn2/Desktop/PROJETO_SD_2019/ULA/soma
 +------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 ; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Location assigned by ;
 +------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
-; A/S  ; L2    ; 5        ; 40           ; 16           ; 3           ; 5                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; A[0] ; Y14   ; 8        ; 7            ; 0            ; 1           ; 3                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; A[1] ; C16   ; 3        ; 14           ; 27           ; 2           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; A[2] ; Y15   ; 8        ; 14           ; 0            ; 1           ; 3                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; A[3] ; P16   ; 1        ; 0            ; 7            ; 2           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; B[0] ; C11   ; 4        ; 22           ; 27           ; 0           ; 3                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; B[1] ; R1    ; 6        ; 40           ; 8            ; 0           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; B[2] ; N3    ; 6        ; 40           ; 10           ; 1           ; 3                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; B[3] ; Y10   ; 7        ; 22           ; 0            ; 2           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; A[0] ; AA5   ; 7        ; 31           ; 0            ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; A[1] ; Y21   ; 1        ; 0            ; 1            ; 3           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; A[2] ; Y8    ; 7        ; 29           ; 0            ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; A[3] ; W3    ; 6        ; 40           ; 1            ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; B[0] ; V4    ; 6        ; 40           ; 2            ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; B[1] ; A5    ; 4        ; 31           ; 27           ; 3           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; B[2] ; Y22   ; 1        ; 0            ; 1            ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; B[3] ; C5    ; 4        ; 31           ; 27           ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
 +------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Output Pins                                                                                                                                                                                                                                                                                                                            ;
-+----------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
-; Name     ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Output Register ; Output Enable Register ; Power Up High ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination ; Location assigned by ; Load ; Output Enable Source ; Output Enable Group ;
-+----------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
-; Overflow ; T2    ; 6        ; 40           ; 7            ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 12mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; S[0]     ; B12   ; 4        ; 22           ; 27           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; S[1]     ; A15   ; 3        ; 14           ; 27           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; S[2]     ; E11   ; 3        ; 17           ; 27           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; S[3]     ; H1    ; 5        ; 40           ; 20           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 12mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-+----------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Output Pins                                                                                                                                                                                                                                                                                                                        ;
++------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
+; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Output Register ; Output Enable Register ; Power Up High ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination ; Location assigned by ; Load ; Output Enable Source ; Output Enable Group ;
++------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
+; S    ; K17   ; 2        ; 0            ; 19           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 12mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
++------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
 
 
 +----------------------------------------------------------+
@@ -379,14 +369,14 @@ The pin-out file can be found in D:/Users/absn2/Desktop/PROJETO_SD_2019/ULA/soma
 +----------+----------------+---------------+--------------+
 ; I/O Bank ; Usage          ; VCCIO Voltage ; VREF Voltage ;
 +----------+----------------+---------------+--------------+
-; 1        ; 1 / 40 ( 3 % ) ; 3.3V          ; --           ;
-; 2        ; 0 / 44 ( 0 % ) ; 3.3V          ; --           ;
-; 3        ; 4 / 50 ( 8 % ) ; 3.3V          ; --           ;
+; 1        ; 2 / 40 ( 5 % ) ; 3.3V          ; --           ;
+; 2        ; 1 / 44 ( 2 % ) ; 3.3V          ; --           ;
+; 3        ; 1 / 50 ( 2 % ) ; 3.3V          ; --           ;
 ; 4        ; 2 / 35 ( 6 % ) ; 3.3V          ; --           ;
-; 5        ; 2 / 44 ( 5 % ) ; 3.3V          ; --           ;
-; 6        ; 3 / 40 ( 8 % ) ; 3.3V          ; --           ;
-; 7        ; 1 / 34 ( 3 % ) ; 3.3V          ; --           ;
-; 8        ; 2 / 43 ( 5 % ) ; 3.3V          ; --           ;
+; 5        ; 0 / 44 ( 0 % ) ; 3.3V          ; --           ;
+; 6        ; 2 / 40 ( 5 % ) ; 3.3V          ; --           ;
+; 7        ; 2 / 34 ( 6 % ) ; 3.3V          ; --           ;
+; 8        ; 0 / 43 ( 0 % ) ; 3.3V          ; --           ;
 ; 9        ; 0 / 6 ( 0 % )  ; 3.3V          ; --           ;
 ; 10       ; 0 / 6 ( 0 % )  ; 3.3V          ; --           ;
 +----------+----------------+---------------+--------------+
@@ -401,7 +391,7 @@ The pin-out file can be found in D:/Users/absn2/Desktop/PROJETO_SD_2019/ULA/soma
 ; A2       ;            ;          ; TEMPDIODEp               ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; A3       ;            ; 4        ; VCCIO4                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; A4       ; 277        ; 4        ; ^MSEL3                   ;        ;              ;         ; --         ;                 ; --       ; --           ;
-; A5       ; 307        ; 4        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; A5       ; 307        ; 4        ; B[1]                     ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; A6       ; 311        ; 4        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; A7       ; 315        ; 4        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; A8       ; 318        ; 4        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -411,7 +401,7 @@ The pin-out file can be found in D:/Users/absn2/Desktop/PROJETO_SD_2019/ULA/soma
 ; A12      ;            ; 3        ; VCCIO3                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; A13      ; 329        ; 3        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; A14      ;            ;          ; GND                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; A15      ; 343        ; 3        ; S[1]                     ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; A15      ; 343        ; 3        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; A16      ; 347        ; 3        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; A17      ; 351        ; 3        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; A18      ; 350        ; 3        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -423,7 +413,7 @@ The pin-out file can be found in D:/Users/absn2/Desktop/PROJETO_SD_2019/ULA/soma
 ; AA2      ;            ;          ; GND                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AA3      ; 191        ; 7        ; ^nCEO                    ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; AA4      ; 181        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AA5      ; 163        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AA5      ; 163        ; 7        ; A[0]                     ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; AA6      ; 159        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA7      ; 155        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA8      ; 151        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -474,7 +464,7 @@ The pin-out file can be found in D:/Users/absn2/Desktop/PROJETO_SD_2019/ULA/soma
 ; B9       ; 320        ; 9        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B10      ; 321        ; 9        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B11      ; 327        ; 4        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; B12      ; 328        ; 4        ; S[0]                     ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; B12      ; 328        ; 4        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B13      ; 331        ; 3        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B14      ;            ; 3        ; VREFB3                   ; power  ;              ;         ; --         ;                 ; --       ; --           ;
 ; B15      ; 341        ; 3        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -489,18 +479,18 @@ The pin-out file can be found in D:/Users/absn2/Desktop/PROJETO_SD_2019/ULA/soma
 ; C2       ; 273        ; 5        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; C3       ;            ;          ; TEMPDIODEn               ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; C4       ; 285        ; 4        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; C5       ; 306        ; 4        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; C5       ; 306        ; 4        ; B[3]                     ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; C6       ; 308        ; 4        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C7       ; 316        ; 4        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C8       ; 314        ; 4        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C9       ; 319        ; 9        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C10      ; 324        ; 9        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; C11      ; 325        ; 4        ; B[0]                     ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; C11      ; 325        ; 4        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C12      ; 326        ; 4        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C13      ; 330        ; 3        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C14      ; 354        ; 3        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C15      ; 342        ; 3        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; C16      ; 344        ; 3        ; A[1]                     ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; C16      ; 344        ; 3        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C17      ; 352        ; 3        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C18      ; 355        ; 3        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C19      ; 369        ; 3        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -539,7 +529,7 @@ The pin-out file can be found in D:/Users/absn2/Desktop/PROJETO_SD_2019/ULA/soma
 ; E8       ; 298        ; 4        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; E9       ; 301        ; 4        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; E10      ; 312        ; 4        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; E11      ; 335        ; 3        ; S[2]                     ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; E11      ; 335        ; 3        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; E12      ; 339        ; 3        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; E13      ; 338        ; 3        ; ~DATA0~ / RESERVED_INPUT ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; E14      ; 357        ; 3        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -595,7 +585,7 @@ The pin-out file can be found in D:/Users/absn2/Desktop/PROJETO_SD_2019/ULA/soma
 ; G20      ; 17         ; 2        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; G21      ; 22         ; 2        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; G22      ; 20         ; 2        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; H1       ; 251        ; 5        ; S[3]                     ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; H1       ; 251        ; 5        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; H2       ; 249        ; 5        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; H3       ; 259        ; 5        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; H4       ; 257        ; 5        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -655,14 +645,14 @@ The pin-out file can be found in D:/Users/absn2/Desktop/PROJETO_SD_2019/ULA/soma
 ; K14      ;            ; 2        ; VCCPD2                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; K15      ; 35         ; 2        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; K16      ; 33         ; 2        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; K17      ; 31         ; 2        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; K17      ; 31         ; 2        ; S                        ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; K18      ; 29         ; 2        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; K19      ; 34         ; 2        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; K20      ; 32         ; 2        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; K21      ; 38         ; 2        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; K22      ; 36         ; 2        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; L1       ;            ; 5        ; VCCIO5                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
-; L2       ; 233        ; 5        ; A/S                      ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; L2       ; 233        ; 5        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; L3       ; 235        ; 5        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; L4       ;            ;          ; GNDA_PLL4                ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; L5       ;            ;          ; GNDA_PLL4                ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -707,7 +697,7 @@ The pin-out file can be found in D:/Users/absn2/Desktop/PROJETO_SD_2019/ULA/soma
 ; M22      ;            ; 1        ; VCCIO1                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; N1       ; 231        ; 6        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; N2       ; 229        ; 6        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; N3       ; 230        ; 6        ; B[2]                     ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; N3       ; 230        ; 6        ; GND+                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; N4       ; 228        ; 6        ; GND+                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; N5       ;            ;          ; GNDA_PLL3                ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; N6       ;            ;          ; GNDA_PLL3                ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -742,14 +732,14 @@ The pin-out file can be found in D:/Users/absn2/Desktop/PROJETO_SD_2019/ULA/soma
 ; P13      ;            ;          ; GND                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; P14      ;            ;          ; VCCINT                   ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; P15      ;            ; 1        ; VCCPD1                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
-; P16      ; 59         ; 1        ; A[3]                     ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; P16      ; 59         ; 1        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; P17      ; 57         ; 1        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; P18      ; 55         ; 1        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; P19      ; 53         ; 1        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; P20      ; 50         ; 1        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; P21      ; 48         ; 1        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; P22      ;            ;          ; GND                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; R1       ; 223        ; 6        ; B[1]                     ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; R1       ; 223        ; 6        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; R2       ; 221        ; 6        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; R3       ; 215        ; 6        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; R4       ; 213        ; 6        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -772,7 +762,7 @@ The pin-out file can be found in D:/Users/absn2/Desktop/PROJETO_SD_2019/ULA/soma
 ; R21      ; 54         ; 1        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; R22      ; 52         ; 1        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; T1       ; 219        ; 6        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; T2       ; 217        ; 6        ; Overflow                 ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; T2       ; 217        ; 6        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; T3       ; 207        ; 6        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; T4       ; 205        ; 6        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; T5       ; 210        ; 6        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -818,7 +808,7 @@ The pin-out file can be found in D:/Users/absn2/Desktop/PROJETO_SD_2019/ULA/soma
 ; V1       ; 203        ; 6        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; V2       ; 201        ; 6        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; V3       ; 198        ; 6        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; V4       ; 196        ; 6        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; V4       ; 196        ; 6        ; B[0]                     ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; V5       ; 188        ; 7        ; ^PORSEL                  ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; V6       ; 185        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; V7       ; 175        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -839,7 +829,7 @@ The pin-out file can be found in D:/Users/absn2/Desktop/PROJETO_SD_2019/ULA/soma
 ; V22      ; 72         ; 1        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; W1       ; 199        ; 6        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; W2       ; 197        ; 6        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; W3       ; 194        ; 6        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; W3       ; 194        ; 6        ; A[3]                     ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; W4       ; 192        ; 6        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; W5       ; 182        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; W6       ;            ; 7        ; VREFB7                   ; power  ;              ;         ; --         ;                 ; --       ; --           ;
@@ -866,21 +856,21 @@ The pin-out file can be found in D:/Users/absn2/Desktop/PROJETO_SD_2019/ULA/soma
 ; Y5       ; 162        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; Y6       ; 160        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; Y7       ; 154        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; Y8       ; 152        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; Y8       ; 152        ; 7        ; A[2]                     ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; Y9       ; 146        ; 10       ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; Y10      ; 140        ; 7        ; B[3]                     ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; Y10      ; 140        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; Y11      ; 143        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; Y12      ; 136        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; Y13      ; 131        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; Y14      ; 110        ; 8        ; A[0]                     ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; Y15      ; 126        ; 8        ; A[2]                     ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; Y14      ; 110        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; Y15      ; 126        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; Y16      ; 121        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; Y17      ; 116        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; Y18      ; 113        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; Y19      ;            ; 8        ; VREFB8                   ; power  ;              ;         ; --         ;                 ; --       ; --           ;
 ; Y20      ; 91         ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; Y21      ; 82         ; 1        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; Y22      ; 80         ; 1        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; Y21      ; 82         ; 1        ; A[1]                     ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; Y22      ; 80         ; 1        ; B[2]                     ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 +----------+------------+----------+--------------------------+--------+--------------+---------+------------+-----------------+----------+--------------+
 Note: Pin directions (input, output or bidir) are based on device operating in user mode.
 
@@ -928,100 +918,68 @@ Note: User assignments will override these defaults. The user specified values a
 ; Compilation Hierarchy Node ; Combinational ALUTs ; ALMs  ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M512s ; M4Ks ; M-RAMs ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Combinational with no register ; Register-Only      ; Combinational with a register ; Full Hierarchy Name ; Library Name ;
 ;                            ;                     ;       ;                           ;               ;                   ;       ;      ;        ;              ;         ;           ;           ;      ;              ; ALUT/register pair             ; ALUT/register pair ; ALUT/register pair            ;                     ;              ;
 +----------------------------+---------------------+-------+---------------------------+---------------+-------------------+-------+------+--------+--------------+---------+-----------+-----------+------+--------------+--------------------------------+--------------------+-------------------------------+---------------------+--------------+
-; |AddSub                    ; 6 (1)               ; 4 (1) ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 14   ; 0            ; 6 (1)                          ; 0 (0)              ; 0 (0)                         ; |AddSub             ; work         ;
-;    |aBc:inst7|             ; 1 (1)               ; 1 (1) ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)                          ; 0 (0)              ; 0 (0)                         ; |AddSub|aBc:inst7   ;              ;
-;    |aBc:inst8|             ; 1 (1)               ; 1 (1) ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)                          ; 0 (0)              ; 0 (0)                         ; |AddSub|aBc:inst8   ; work         ;
-;    |aBc:inst9|             ; 1 (1)               ; 1 (1) ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)                          ; 0 (0)              ; 0 (0)                         ; |AddSub|aBc:inst9   ; work         ;
-;    |aBc:inst|              ; 2 (2)               ; 1 (1) ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (2)                          ; 0 (0)              ; 0 (0)                         ; |AddSub|aBc:inst    ; work         ;
+; |EqualsSystem              ; 2 (2)               ; 2 (2) ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 9    ; 0            ; 2 (2)                          ; 0 (0)              ; 0 (0)                         ; |EqualsSystem       ; work         ;
 +----------------------------+---------------------+-------+---------------------------+---------------+-------------------+-------+------+--------+--------------+---------+-----------+-----------+------+--------------+--------------------------------+--------------------+-------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+---------------------------------------------------------------------------------------------------------------------------------+
-; Delay Chain Summary                                                                                                             ;
-+----------+----------+---------------+---------------+-----------------------+-----+-----------+---------+----------+------------+
-; Name     ; Pin Type ; Pad to Core 0 ; Pad to Core 1 ; Pad to Input Register ; TCO ; TCOE      ; DQS bus ; NDQS bus ; DQS output ;
-+----------+----------+---------------+---------------+-----------------------+-----+-----------+---------+----------+------------+
-; Overflow ; Output   ; --            ; --            ; --                    ; --  ; (0) 52 ps ; --      ; --       ; --         ;
-; S[3]     ; Output   ; --            ; --            ; --                    ; --  ; (0) 52 ps ; --      ; --       ; --         ;
-; S[2]     ; Output   ; --            ; --            ; --                    ; --  ; (0) 52 ps ; --      ; --       ; --         ;
-; S[1]     ; Output   ; --            ; --            ; --                    ; --  ; (0) 52 ps ; --      ; --       ; --         ;
-; S[0]     ; Output   ; --            ; --            ; --                    ; --  ; (0) 52 ps ; --      ; --       ; --         ;
-; B[2]     ; Input    ; (7) 3082 ps   ; (7) 3082 ps   ; --                    ; --  ; --        ; --      ; --       ; --         ;
-; A/S      ; Input    ; (7) 3082 ps   ; (7) 3082 ps   ; --                    ; --  ; --        ; --      ; --       ; --         ;
-; A[2]     ; Input    ; (7) 2996 ps   ; (7) 2996 ps   ; --                    ; --  ; --        ; --      ; --       ; --         ;
-; A[0]     ; Input    ; (7) 2996 ps   ; (7) 2996 ps   ; --                    ; --  ; --        ; --      ; --       ; --         ;
-; B[0]     ; Input    ; (7) 2996 ps   ; (7) 2996 ps   ; --                    ; --  ; --        ; --      ; --       ; --         ;
-; A[1]     ; Input    ; (7) 2996 ps   ; (7) 2996 ps   ; --                    ; --  ; --        ; --      ; --       ; --         ;
-; B[1]     ; Input    ; (7) 3082 ps   ; (7) 3082 ps   ; --                    ; --  ; --        ; --      ; --       ; --         ;
-; B[3]     ; Input    ; (7) 2996 ps   ; (7) 2996 ps   ; --                    ; --  ; --        ; --      ; --       ; --         ;
-; A[3]     ; Input    ; (7) 3082 ps   ; (7) 3082 ps   ; --                    ; --  ; --        ; --      ; --       ; --         ;
-+----------+----------+---------------+---------------+-----------------------+-----+-----------+---------+----------+------------+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Delay Chain Summary                                                                                                         ;
++------+----------+---------------+---------------+-----------------------+-----+-----------+---------+----------+------------+
+; Name ; Pin Type ; Pad to Core 0 ; Pad to Core 1 ; Pad to Input Register ; TCO ; TCOE      ; DQS bus ; NDQS bus ; DQS output ;
++------+----------+---------------+---------------+-----------------------+-----+-----------+---------+----------+------------+
+; S    ; Output   ; --            ; --            ; --                    ; --  ; (0) 52 ps ; --      ; --       ; --         ;
+; A[3] ; Input    ; (7) 3082 ps   ; (7) 3082 ps   ; --                    ; --  ; --        ; --      ; --       ; --         ;
+; B[3] ; Input    ; (7) 2996 ps   ; (7) 2996 ps   ; --                    ; --  ; --        ; --      ; --       ; --         ;
+; A[2] ; Input    ; (7) 2996 ps   ; (7) 2996 ps   ; --                    ; --  ; --        ; --      ; --       ; --         ;
+; B[2] ; Input    ; (7) 3082 ps   ; (7) 3082 ps   ; --                    ; --  ; --        ; --      ; --       ; --         ;
+; A[0] ; Input    ; (7) 2996 ps   ; (7) 2996 ps   ; --                    ; --  ; --        ; --      ; --       ; --         ;
+; B[0] ; Input    ; (7) 3082 ps   ; (7) 3082 ps   ; --                    ; --  ; --        ; --      ; --       ; --         ;
+; A[1] ; Input    ; (7) 3082 ps   ; (7) 3082 ps   ; --                    ; --  ; --        ; --      ; --       ; --         ;
+; B[1] ; Input    ; (7) 2996 ps   ; (7) 2996 ps   ; --                    ; --  ; --        ; --      ; --       ; --         ;
++------+----------+---------------+---------------+-----------------------+-----+-----------+---------+----------+------------+
 
 
-+--------------------------------------------------------+
-; Pad To Core Delay Chain Fanout                         ;
-+--------------------------+-------------------+---------+
-; Source Pin / Fanout      ; Pad To Core Index ; Setting ;
-+--------------------------+-------------------+---------+
-; B[2]                     ;                   ;         ;
-;      - inst12            ; 0                 ; 7       ;
-;      - aBc:inst7|inst3   ; 0                 ; 7       ;
-;      - aBc:inst8|inst3   ; 0                 ; 7       ;
-; A/S                      ;                   ;         ;
-;      - aBc:inst|inst7~0  ; 1                 ; 7       ;
-;      - inst12            ; 1                 ; 7       ;
-;      - aBc:inst7|inst3   ; 1                 ; 7       ;
-;      - aBc:inst8|inst3   ; 1                 ; 7       ;
-;      - aBc:inst|inst3    ; 1                 ; 7       ;
-; A[2]                     ;                   ;         ;
-;      - inst12            ; 1                 ; 7       ;
-;      - aBc:inst7|inst3   ; 1                 ; 7       ;
-;      - aBc:inst8|inst3   ; 1                 ; 7       ;
-; A[0]                     ;                   ;         ;
-;      - aBc:inst|inst7~0  ; 0                 ; 7       ;
-;      - aBc:inst|inst3    ; 0                 ; 7       ;
-;      - aBc:inst9|inst3~0 ; 0                 ; 7       ;
-; B[0]                     ;                   ;         ;
-;      - aBc:inst|inst7~0  ; 1                 ; 7       ;
-;      - aBc:inst|inst3    ; 1                 ; 7       ;
-;      - aBc:inst9|inst3~0 ; 1                 ; 7       ;
-; A[1]                     ;                   ;         ;
-;      - aBc:inst|inst7~0  ; 0                 ; 7       ;
-;      - aBc:inst|inst3    ; 0                 ; 7       ;
-; B[1]                     ;                   ;         ;
-;      - aBc:inst|inst7~0  ; 0                 ; 7       ;
-;      - aBc:inst|inst3    ; 0                 ; 7       ;
-; B[3]                     ;                   ;         ;
-;      - inst12            ; 1                 ; 7       ;
-;      - aBc:inst7|inst3   ; 1                 ; 7       ;
-; A[3]                     ;                   ;         ;
-;      - inst12            ; 1                 ; 7       ;
-;      - aBc:inst7|inst3   ; 1                 ; 7       ;
-+--------------------------+-------------------+---------+
++---------------------------------------------------+
+; Pad To Core Delay Chain Fanout                    ;
++---------------------+-------------------+---------+
+; Source Pin / Fanout ; Pad To Core Index ; Setting ;
++---------------------+-------------------+---------+
+; A[3]                ;                   ;         ;
+;      - inst5        ; 1                 ; 7       ;
+; B[3]                ;                   ;         ;
+;      - inst5        ; 1                 ; 7       ;
+; A[2]                ;                   ;         ;
+;      - inst5        ; 0                 ; 7       ;
+; B[2]                ;                   ;         ;
+;      - inst5        ; 0                 ; 7       ;
+; A[0]                ;                   ;         ;
+;      - inst5~0      ; 0                 ; 7       ;
+; B[0]                ;                   ;         ;
+;      - inst5~0      ; 1                 ; 7       ;
+; A[1]                ;                   ;         ;
+;      - inst5~0      ; 0                 ; 7       ;
+; B[1]                ;                   ;         ;
+;      - inst5~0      ; 0                 ; 7       ;
++---------------------+-------------------+---------+
 
 
 +---------------------------------+
 ; Non-Global High Fan-Out Signals ;
-+-------------------+-------------+
-; Name              ; Fan-Out     ;
-+-------------------+-------------+
-; A/S               ; 5           ;
-; B[0]              ; 3           ;
-; A[0]              ; 3           ;
-; A[2]              ; 3           ;
-; B[2]              ; 3           ;
-; aBc:inst|inst7~0  ; 3           ;
-; A[3]              ; 2           ;
-; B[3]              ; 2           ;
-; B[1]              ; 2           ;
-; A[1]              ; 2           ;
-; aBc:inst9|inst3~0 ; 1           ;
-; aBc:inst|inst3    ; 1           ;
-; aBc:inst8|inst3   ; 1           ;
-; aBc:inst7|inst3   ; 1           ;
-; inst12            ; 1           ;
-+-------------------+-------------+
++---------+-----------------------+
+; Name    ; Fan-Out               ;
++---------+-----------------------+
+; B[1]    ; 1                     ;
+; A[1]    ; 1                     ;
+; B[0]    ; 1                     ;
+; A[0]    ; 1                     ;
+; B[2]    ; 1                     ;
+; A[2]    ; 1                     ;
+; B[3]    ; 1                     ;
+; A[3]    ; 1                     ;
+; inst5   ; 1                     ;
+; inst5~0 ; 1                     ;
++---------+-----------------------+
 
 
 +-------------------------------------------------------------------+
@@ -1029,9 +987,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------+-----------------------+
 ; Interconnect Resource Type                ; Usage                 ;
 +-------------------------------------------+-----------------------+
-; Block interconnects                       ; 15 / 51,960 ( < 1 % ) ;
-; C16 interconnects                         ; 6 / 1,680 ( < 1 % )   ;
-; C4 interconnects                          ; 23 / 38,400 ( < 1 % ) ;
+; Block interconnects                       ; 9 / 51,960 ( < 1 % )  ;
+; C16 interconnects                         ; 5 / 1,680 ( < 1 % )   ;
+; C4 interconnects                          ; 8 / 38,400 ( < 1 % )  ;
 ; DPA clocks                                ; 0 / 4 ( 0 % )         ;
 ; DQS bus muxes                             ; 0 / 18 ( 0 % )        ;
 ; DQS-18 I/O buses                          ; 0 / 4 ( 0 % )         ;
@@ -1047,9 +1005,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; NDQS-9 I/O buses                          ; 0 / 8 ( 0 % )         ;
 ; PLL transmitter or receiver load enables  ; 0 / 8 ( 0 % )         ;
 ; PLL transmitter or receiver synch. clocks ; 0 / 8 ( 0 % )         ;
-; R24 interconnects                         ; 5 / 1,664 ( < 1 % )   ;
-; R24/C16 interconnect drivers              ; 2 / 4,160 ( < 1 % )   ;
-; R4 interconnects                          ; 21 / 59,488 ( < 1 % ) ;
+; R24 interconnects                         ; 4 / 1,664 ( < 1 % )   ;
+; R24/C16 interconnect drivers              ; 5 / 4,160 ( < 1 % )   ;
+; R4 interconnects                          ; 10 / 59,488 ( < 1 % ) ;
 ; Regional clocks                           ; 0 / 32 ( 0 % )        ;
 +-------------------------------------------+-----------------------+
 
@@ -1057,12 +1015,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------------+
 ; LAB Logic Elements                                             ;
 +----------------------------------+-----------------------------+
-; Number of ALMs  (Average = 4.00) ; Number of LABs  (Total = 1) ;
+; Number of ALMs  (Average = 2.00) ; Number of LABs  (Total = 1) ;
 +----------------------------------+-----------------------------+
 ; 1                                ; 0                           ;
-; 2                                ; 0                           ;
+; 2                                ; 1                           ;
 ; 3                                ; 0                           ;
-; 4                                ; 1                           ;
+; 4                                ; 0                           ;
 ; 5                                ; 0                           ;
 ; 6                                ; 0                           ;
 ; 7                                ; 0                           ;
@@ -1073,36 +1031,28 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                       ;
 +---------------------------------------------+-----------------------------+
-; Number of Signals Sourced  (Average = 6.00) ; Number of LABs  (Total = 1) ;
+; Number of Signals Sourced  (Average = 2.00) ; Number of LABs  (Total = 1) ;
 +---------------------------------------------+-----------------------------+
 ; 0                                           ; 0                           ;
 ; 1                                           ; 0                           ;
-; 2                                           ; 0                           ;
-; 3                                           ; 0                           ;
-; 4                                           ; 0                           ;
-; 5                                           ; 0                           ;
-; 6                                           ; 1                           ;
+; 2                                           ; 1                           ;
 +---------------------------------------------+-----------------------------+
 
 
 +-------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                       ;
 +-------------------------------------------------+-----------------------------+
-; Number of Signals Sourced Out  (Average = 5.00) ; Number of LABs  (Total = 1) ;
+; Number of Signals Sourced Out  (Average = 1.00) ; Number of LABs  (Total = 1) ;
 +-------------------------------------------------+-----------------------------+
 ; 0                                               ; 0                           ;
-; 1                                               ; 0                           ;
-; 2                                               ; 0                           ;
-; 3                                               ; 0                           ;
-; 4                                               ; 0                           ;
-; 5                                               ; 1                           ;
+; 1                                               ; 1                           ;
 +-------------------------------------------------+-----------------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                       ;
 +---------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 9.00) ; Number of LABs  (Total = 1) ;
+; Number of Distinct Inputs  (Average = 8.00) ; Number of LABs  (Total = 1) ;
 +---------------------------------------------+-----------------------------+
 ; 0                                           ; 0                           ;
 ; 1                                           ; 0                           ;
@@ -1112,8 +1062,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 5                                           ; 0                           ;
 ; 6                                           ; 0                           ;
 ; 7                                           ; 0                           ;
-; 8                                           ; 0                           ;
-; 9                                           ; 1                           ;
+; 8                                           ; 1                           ;
 +---------------------------------------------+-----------------------------+
 
 
@@ -1174,24 +1123,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+--------------+--------------+--------------+
 ; Pin/Rules          ; IO_000001    ; IO_000002    ; IO_000003    ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007    ; IO_000008    ; IO_000009 ; IO_000010 ; IO_000011    ; IO_000012    ; IO_000013    ; IO_000014    ; IO_000015    ; IO_000018    ; IO_000019    ; IO_000020    ; IO_000021    ; IO_000022    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000032    ; IO_000033 ; IO_000034    ; IO_000037    ; IO_000038    ; IO_000042    ; IO_000040    ;
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+--------------+--------------+--------------+
-; Total Pass         ; 0            ; 0            ; 0            ; 0            ; 0            ; 14        ; 0            ; 0            ; 14        ; 14        ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 14        ; 0            ; 0            ; 0            ; 0            ; 0            ;
+; Total Pass         ; 0            ; 0            ; 0            ; 0            ; 0            ; 9         ; 0            ; 0            ; 9         ; 9         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 9         ; 0            ; 0            ; 0            ; 0            ; 0            ;
 ; Total Unchecked    ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ;
-; Total Inapplicable ; 14           ; 14           ; 14           ; 14           ; 14           ; 0         ; 14           ; 14           ; 0         ; 0         ; 14           ; 14           ; 14           ; 14           ; 14           ; 14           ; 14           ; 14           ; 14           ; 14           ; 14           ; 14           ; 14           ; 14           ; 14           ; 0         ; 14           ; 14           ; 14           ; 14           ; 14           ;
+; Total Inapplicable ; 9            ; 9            ; 9            ; 9            ; 9            ; 0         ; 9            ; 9            ; 0         ; 0         ; 9            ; 9            ; 9            ; 9            ; 9            ; 9            ; 9            ; 9            ; 9            ; 9            ; 9            ; 9            ; 9            ; 9            ; 9            ; 0         ; 9            ; 9            ; 9            ; 9            ; 9            ;
 ; Total Fail         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ;
-; Overflow           ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; S[3]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; S[2]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; S[1]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; S[0]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; B[2]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; A/S                ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; S                  ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; A[3]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; B[3]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; A[2]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; B[2]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; A[0]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; B[0]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; A[1]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; B[1]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; B[3]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; A[3]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+--------------+--------------+--------------+
 
 
@@ -1242,8 +1186,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Fitter
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
-    Info: Processing started: Mon Apr 15 16:16:57 2019
-Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off somadorSubtrador -c somadorSubtrador
+    Info: Processing started: Wed Apr 17 18:07:57 2019
+Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off projetoSD -c somadorSubtrador
 Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info: Automatically selected device EP2S15F484C3 for design somadorSubtrador
 Info: Fitter is performing an Auto Fit compilation, which may decrease Fitter effort to reduce compilation time
@@ -1253,21 +1197,16 @@ Info: Device migration not selected. If you intend to use device migration later
     Info: Device EP2S60F484C3ES is compatible
 Info: Fitter converted 1 user pins into dedicated programming pins
     Info: Pin ~DATA0~ is reserved at location E13
-Critical Warning: No exact pin location assignment(s) for 14 pins of 14 total pins
-    Info: Pin Overflow not assigned to an exact location on the device
-    Info: Pin S[3] not assigned to an exact location on the device
-    Info: Pin S[2] not assigned to an exact location on the device
-    Info: Pin S[1] not assigned to an exact location on the device
-    Info: Pin S[0] not assigned to an exact location on the device
-    Info: Pin B[2] not assigned to an exact location on the device
-    Info: Pin A/S not assigned to an exact location on the device
+Critical Warning: No exact pin location assignment(s) for 9 pins of 9 total pins
+    Info: Pin S not assigned to an exact location on the device
+    Info: Pin A[3] not assigned to an exact location on the device
+    Info: Pin B[3] not assigned to an exact location on the device
     Info: Pin A[2] not assigned to an exact location on the device
+    Info: Pin B[2] not assigned to an exact location on the device
     Info: Pin A[0] not assigned to an exact location on the device
     Info: Pin B[0] not assigned to an exact location on the device
     Info: Pin A[1] not assigned to an exact location on the device
     Info: Pin B[1] not assigned to an exact location on the device
-    Info: Pin B[3] not assigned to an exact location on the device
-    Info: Pin A[3] not assigned to an exact location on the device
 Warning: Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
 Info: Timing-driven compilation is using the Classic Timing Analyzer
 Info: Timing requirements not specified -- quality metrics such as performance and power consumption may be sacrificed to reduce compilation time.
@@ -1275,7 +1214,7 @@ Info: Starting register packing
 Info: Finished register packing
     Extra Info: No registers were packed into other blocks
 Info: Statistics of I/O pins that need to be placed that use the same VCCIO and VREF, before I/O pin placement
-    Info: Number of I/O pins in group: 14 (unused VREF, 3.3V VCCIO, 9 input, 5 output, 0 bidirectional)
+    Info: Number of I/O pins in group: 9 (unused VREF, 3.3V VCCIO, 8 input, 1 output, 0 bidirectional)
         Info: I/O standards used: 3.3-V LVTTL.
 Info: I/O bank details before I/O pin placement
     Info: Statistics of I/O banks
@@ -1297,31 +1236,29 @@ Info: Fitter placement was successful
 Info: Fitter placement operations ending: elapsed time is 00:00:00
 Info: Fitter routing operations beginning
 Info: Average interconnect usage is 0% of the available device resources
-    Info: Peak interconnect usage is 0% of the available device resources in the region that extends from location X13_Y14 to location X26_Y27
+    Info: Peak interconnect usage is 0% of the available device resources in the region that extends from location X27_Y0 to location X40_Y13
 Info: Fitter routing operations ending: elapsed time is 00:00:00
 Info: The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info: Optimizations that may affect the design's routability were skipped
     Info: Optimizations that may affect the design's timing were skipped
 Info: Started post-fitting delay annotation
-Warning: Found 5 output pins without output pin load capacitance assignment
-    Info: Pin "Overflow" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info: Pin "S[3]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info: Pin "S[2]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info: Pin "S[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info: Pin "S[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+Warning: Found 1 output pins without output pin load capacitance assignment
+    Info: Pin "S" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+Info: Delay annotation completed successfully
+Info: Started post-fitting delay annotation
 Info: Delay annotation completed successfully
 Warning: The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
-Info: Generated suppressed messages file D:/Users/absn2/Desktop/PROJETO_SD_2019/ULA/somadorSubtrador/somadorSubtrador.fit.smsg
+Info: Generated suppressed messages file D:/Users/afss2/Desktop/PROJETO_SD_2019/ULA/somadorSubtrador.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 516 megabytes
-    Info: Processing ended: Mon Apr 15 16:16:59 2019
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Peak virtual memory: 519 megabytes
+    Info: Processing ended: Wed Apr 17 18:08:01 2019
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:04
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in D:/Users/absn2/Desktop/PROJETO_SD_2019/ULA/somadorSubtrador/somadorSubtrador.fit.smsg.
+The suppressed messages can be found in D:/Users/afss2/Desktop/PROJETO_SD_2019/ULA/somadorSubtrador.fit.smsg.
 
 
