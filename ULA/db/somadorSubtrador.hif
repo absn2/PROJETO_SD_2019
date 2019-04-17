@@ -68,10 +68,10 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-EqualsBox:inst1
+EqualsBox:inst4
 EqualsBox:inst3
-EqualsBox:inst
 EqualsBox:inst2
+EqualsBox:inst1
 }
 # macro_sequence
 
@@ -85,6 +85,23 @@ db|somadorSubtrador.(3).cnf
 # source_file
 equalssystem.bdf
 e48bdbbfadecbaaf7b3d119da199dbde
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+MaiorMenorFuction
+# storage
+db|somadorSubtrador.(4).cnf
+db|somadorSubtrador.(4).cnf
+# case_insensitive
+# source_file
+maiormenorfuction.bdf
+7aa77cdb1c070e06c71c93f7ad29fdf
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
