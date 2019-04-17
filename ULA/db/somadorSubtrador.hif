@@ -33,6 +33,63 @@ functionand.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
+# macro_sequence
+
+# end
+# entity
+FunctionXOR
+# storage
+db|somadorSubtrador.(1).cnf
+db|somadorSubtrador.(1).cnf
+# case_insensitive
+# source_file
+functionxor.bdf
+1c65145fa506cd5f2aa6de782b8c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+EqualsBox
+# storage
+db|somadorSubtrador.(2).cnf
+db|somadorSubtrador.(2).cnf
+# case_insensitive
+# source_file
+equalsbox.bdf
+618670965c7abbaed15b98af85b4550
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+EqualsBox:inst1
+EqualsBox:inst3
+EqualsBox:inst
+EqualsBox:inst2
+}
+# macro_sequence
+
+# end
+# entity
+EqualsSystem
+# storage
+db|somadorSubtrador.(3).cnf
+db|somadorSubtrador.(3).cnf
+# case_insensitive
+# source_file
+equalssystem.bdf
+e48bdbbfadecbaaf7b3d119da199dbde
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
 # hierarchies {
 |
 }

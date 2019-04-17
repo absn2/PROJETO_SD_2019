@@ -1,5 +1,5 @@
 Analysis & Synthesis report for somadorSubtrador
-Wed Apr 17 16:54:19 2019
+Wed Apr 17 18:07:56 2019
 Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
 
 
@@ -40,16 +40,16 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +-------------------------------+-----------------------------------------------+
-; Analysis & Synthesis Status   ; Successful - Wed Apr 17 16:54:19 2019         ;
+; Analysis & Synthesis Status   ; Successful - Wed Apr 17 18:07:56 2019         ;
 ; Quartus II 64-Bit Version     ; 9.1 Build 350 03/24/2010 SP 2 SJ Full Version ;
 ; Revision Name                 ; somadorSubtrador                              ;
-; Top-level Entity Name         ; FunctionAnd                                   ;
+; Top-level Entity Name         ; EqualsSystem                                  ;
 ; Family                        ; Stratix II                                    ;
 ; Logic utilization             ; N/A                                           ;
-;     Combinational ALUTs       ; 4                                             ;
+;     Combinational ALUTs       ; 2                                             ;
 ;     Dedicated logic registers ; 0                                             ;
 ; Total registers               ; 0                                             ;
-; Total pins                    ; 12                                            ;
+; Total pins                    ; 9                                             ;
 ; Total virtual pins            ; 0                                             ;
 ; Total block memory bits       ; 0                                             ;
 ; DSP block 9-bit elements      ; 0                                             ;
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; FunctionAnd        ; somadorSubtrador   ;
+; Top-level entity name                                                      ; EqualsSystem       ; somadorSubtrador   ;
 ; Family name                                                                ; Stratix II         ; Cyclone IV GX      ;
 ; Use Generated Physical Constraints File                                    ; Off                ;                    ;
 ; Synchronization Register Chain Length                                      ; 2                  ; 3                  ;
@@ -155,52 +155,54 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                               ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                               ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------+
-; FunctionAnd.bdf                  ; yes             ; User Block Diagram/Schematic File  ; D:/Users/afss2/Desktop/PROJETO_SD_2019/ULA/FunctionAnd.bdf ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------+
+; EqualsBox.bdf                    ; yes             ; User Block Diagram/Schematic File  ; D:/Users/afss2/Desktop/PROJETO_SD_2019/ULA/EqualsBox.bdf    ;
+; EqualsSystem.bdf                 ; yes             ; User Block Diagram/Schematic File  ; D:/Users/afss2/Desktop/PROJETO_SD_2019/ULA/EqualsSystem.bdf ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------+
 
 
-+------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary          ;
-+----------------------------------------------+-------+
-; Resource                                     ; Usage ;
-+----------------------------------------------+-------+
-; Estimated ALUTs Used                         ; 4     ;
-; Dedicated logic registers                    ; 0     ;
-;                                              ;       ;
-; Estimated ALUTs Unavailable                  ; 0     ;
-;                                              ;       ;
-; Total combinational functions                ; 4     ;
-; Combinational ALUT usage by number of inputs ;       ;
-;     -- 7 input functions                     ; 0     ;
-;     -- 6 input functions                     ; 0     ;
-;     -- 5 input functions                     ; 0     ;
-;     -- 4 input functions                     ; 0     ;
-;     -- <=3 input functions                   ; 4     ;
-;                                              ;       ;
-; Combinational ALUTs by mode                  ;       ;
-;     -- normal mode                           ; 4     ;
-;     -- extended LUT mode                     ; 0     ;
-;     -- arithmetic mode                       ; 0     ;
-;     -- shared arithmetic mode                ; 0     ;
-;                                              ;       ;
-; Estimated ALUT/register pairs used           ; 0     ;
-;                                              ;       ;
-; Total registers                              ; 0     ;
-;     -- Dedicated logic registers             ; 0     ;
-;     -- I/O registers                         ; 0     ;
-;                                              ;       ;
-;                                              ;       ;
-; I/O pins                                     ; 12    ;
-; Maximum fan-out node                         ; inst4 ;
-; Maximum fan-out                              ; 1     ;
-; Total fan-out                                ; 12    ;
-; Average fan-out                              ; 0.75  ;
-+----------------------------------------------+-------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++-----------------------------------------------+---------+
+; Resource                                      ; Usage   ;
++-----------------------------------------------+---------+
+; Estimated ALUTs Used                          ; 2       ;
+; Dedicated logic registers                     ; 0       ;
+;                                               ;         ;
+; Estimated ALUTs Unavailable                   ; 0       ;
+;                                               ;         ;
+; Total combinational functions                 ; 2       ;
+; Combinational ALUT usage by number of inputs  ;         ;
+;     -- 7 input functions                      ; 0       ;
+;     -- 6 input functions                      ; 0       ;
+;     -- 5 input functions                      ; 1       ;
+;     -- 4 input functions                      ; 1       ;
+;     -- <=3 input functions                    ; 0       ;
+;                                               ;         ;
+; Combinational ALUTs by mode                   ;         ;
+;     -- normal mode                            ; 2       ;
+;     -- extended LUT mode                      ; 0       ;
+;     -- arithmetic mode                        ; 0       ;
+;     -- shared arithmetic mode                 ; 0       ;
+;                                               ;         ;
+; Estimated ALUT/register pairs used            ; 2       ;
+;                                               ;         ;
+; Total registers                               ; 0       ;
+;     -- Dedicated logic registers              ; 0       ;
+;     -- I/O registers                          ; 0       ;
+;                                               ;         ;
+; Estimated ALMs:  partially or completely used ; 1       ;
+;                                               ;         ;
+; I/O pins                                      ; 9       ;
+; Maximum fan-out node                          ; inst5~0 ;
+; Maximum fan-out                               ; 1       ;
+; Total fan-out                                 ; 10      ;
+; Average fan-out                               ; 0.91    ;
++-----------------------------------------------+---------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -208,7 +210,7 @@ applicable agreement for further details.
 +----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
-; |FunctionAnd               ; 4 (4)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 12   ; 0            ; |FunctionAnd        ; work         ;
+; |EqualsSystem              ; 2 (2)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 9    ; 0            ; |EqualsSystem       ; work         ;
 +----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -234,7 +236,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
-    Info: Processing started: Wed Apr 17 16:54:17 2019
+    Info: Processing started: Wed Apr 17 18:07:55 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off projetoSD -c somadorSubtrador
 Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info: Found 1 design units, including 1 entities, in source file fulladder.bdf
@@ -245,15 +247,22 @@ Info: Found 1 design units, including 1 entities, in source file addsub.bdf
     Info: Found entity 1: AddSub
 Info: Found 1 design units, including 1 entities, in source file functionand.bdf
     Info: Found entity 1: FunctionAnd
-Info: Elaborating entity "FunctionAnd" for the top level hierarchy
-Info: Implemented 16 device resources after synthesis - the final resource count might be different
+Info: Found 1 design units, including 1 entities, in source file functionxor.bdf
+    Info: Found entity 1: FunctionXOR
+Info: Found 1 design units, including 1 entities, in source file equalsbox.bdf
+    Info: Found entity 1: EqualsBox
+Info: Found 1 design units, including 1 entities, in source file equalssystem.bdf
+    Info: Found entity 1: EqualsSystem
+Info: Elaborating entity "EqualsSystem" for the top level hierarchy
+Info: Elaborating entity "EqualsBox" for hierarchy "EqualsBox:inst1"
+Info: Implemented 11 device resources after synthesis - the final resource count might be different
     Info: Implemented 8 input pins
-    Info: Implemented 4 output pins
-    Info: Implemented 4 logic cells
+    Info: Implemented 1 output pins
+    Info: Implemented 2 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 343 megabytes
-    Info: Processing ended: Wed Apr 17 16:54:19 2019
-    Info: Elapsed time: 00:00:02
+    Info: Peak virtual memory: 344 megabytes
+    Info: Processing ended: Wed Apr 17 18:07:56 2019
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 
