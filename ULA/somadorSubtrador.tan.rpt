@@ -1,5 +1,5 @@
 Classic Timing Analyzer report for somadorSubtrador
-Mon Apr 15 16:17:03 2019
+Wed Apr 17 16:54:31 2019
 Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
 
 
@@ -39,7 +39,7 @@ applicable agreement for further details.
 +------------------------------+-------+---------------+-------------+------+------+------------+----------+--------------+
 ; Type                         ; Slack ; Required Time ; Actual Time ; From ; To   ; From Clock ; To Clock ; Failed Paths ;
 +------------------------------+-------+---------------+-------------+------+------+------------+----------+--------------+
-; Worst-case tpd               ; N/A   ; None          ; 10.601 ns   ; A[0] ; S[3] ; --         ; --       ; 0            ;
+; Worst-case tpd               ; N/A   ; None          ; 8.837 ns    ; B[1] ; S[1] ; --         ; --       ; 0            ;
 ; Total number of failed paths ;       ;               ;             ;      ;      ;            ;          ; 0            ;
 +------------------------------+-------+---------------+-------------+------+------+------------+----------+--------------+
 
@@ -93,44 +93,20 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------+
-; tpd                                                           ;
-+-------+-------------------+-----------------+------+----------+
-; Slack ; Required P2P Time ; Actual P2P Time ; From ; To       ;
-+-------+-------------------+-----------------+------+----------+
-; N/A   ; None              ; 10.601 ns       ; A[0] ; S[3]     ;
-; N/A   ; None              ; 10.597 ns       ; A[0] ; Overflow ;
-; N/A   ; None              ; 10.382 ns       ; A[1] ; S[3]     ;
-; N/A   ; None              ; 10.378 ns       ; A[1] ; Overflow ;
-; N/A   ; None              ; 10.148 ns       ; B[0] ; S[3]     ;
-; N/A   ; None              ; 10.144 ns       ; B[0] ; Overflow ;
-; N/A   ; None              ; 10.102 ns       ; A/S  ; S[3]     ;
-; N/A   ; None              ; 10.098 ns       ; A/S  ; Overflow ;
-; N/A   ; None              ; 9.963 ns        ; B[1] ; S[3]     ;
-; N/A   ; None              ; 9.959 ns        ; B[1] ; Overflow ;
-; N/A   ; None              ; 9.906 ns        ; A[0] ; S[2]     ;
-; N/A   ; None              ; 9.824 ns        ; A[0] ; S[1]     ;
-; N/A   ; None              ; 9.696 ns        ; A[3] ; Overflow ;
-; N/A   ; None              ; 9.691 ns        ; A[3] ; S[3]     ;
-; N/A   ; None              ; 9.687 ns        ; A[1] ; S[2]     ;
-; N/A   ; None              ; 9.614 ns        ; A[1] ; S[1]     ;
-; N/A   ; None              ; 9.531 ns        ; A[2] ; Overflow ;
-; N/A   ; None              ; 9.523 ns        ; A[2] ; S[3]     ;
-; N/A   ; None              ; 9.453 ns        ; B[0] ; S[2]     ;
-; N/A   ; None              ; 9.407 ns        ; A/S  ; S[2]     ;
-; N/A   ; None              ; 9.371 ns        ; B[0] ; S[1]     ;
-; N/A   ; None              ; 9.332 ns        ; A[2] ; S[2]     ;
-; N/A   ; None              ; 9.296 ns        ; B[3] ; Overflow ;
-; N/A   ; None              ; 9.294 ns        ; B[3] ; S[3]     ;
-; N/A   ; None              ; 9.292 ns        ; A/S  ; S[1]     ;
-; N/A   ; None              ; 9.268 ns        ; B[1] ; S[2]     ;
-; N/A   ; None              ; 9.208 ns        ; A[0] ; S[0]     ;
-; N/A   ; None              ; 9.205 ns        ; B[2] ; Overflow ;
-; N/A   ; None              ; 9.197 ns        ; B[2] ; S[3]     ;
-; N/A   ; None              ; 9.186 ns        ; B[1] ; S[1]     ;
-; N/A   ; None              ; 9.098 ns        ; B[2] ; S[2]     ;
-; N/A   ; None              ; 8.575 ns        ; B[0] ; S[0]     ;
-+-------+-------------------+-----------------+------+----------+
++-----------------------------------------------------------+
+; tpd                                                       ;
++-------+-------------------+-----------------+------+------+
+; Slack ; Required P2P Time ; Actual P2P Time ; From ; To   ;
++-------+-------------------+-----------------+------+------+
+; N/A   ; None              ; 8.837 ns        ; B[1] ; S[1] ;
+; N/A   ; None              ; 8.644 ns        ; A[0] ; S[0] ;
+; N/A   ; None              ; 8.175 ns        ; B[3] ; S[3] ;
+; N/A   ; None              ; 8.153 ns        ; A[1] ; S[1] ;
+; N/A   ; None              ; 7.651 ns        ; B[2] ; S[2] ;
+; N/A   ; None              ; 7.627 ns        ; A[3] ; S[3] ;
+; N/A   ; None              ; 7.392 ns        ; B[0] ; S[0] ;
+; N/A   ; None              ; 7.155 ns        ; A[2] ; S[2] ;
++-------+-------------------+-----------------+------+------+
 
 
 +--------------------------+
@@ -139,20 +115,19 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Classic Timing Analyzer
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
-    Info: Processing started: Mon Apr 15 16:17:02 2019
-Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off somadorSubtrador -c somadorSubtrador --timing_analysis_only
+    Info: Processing started: Wed Apr 17 16:54:31 2019
+Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off projetoSD -c somadorSubtrador --timing_analysis_only
 Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info: Longest tpd from source pin "A[0]" to destination pin "S[3]" is 10.601 ns
-    Info: 1: + IC(0.000 ns) + CELL(0.837 ns) = 0.837 ns; Loc. = PIN_Y14; Fanout = 3; PIN Node = 'A[0]'
-    Info: 2: + IC(4.705 ns) + CELL(0.366 ns) = 5.908 ns; Loc. = LCCOMB_X21_Y13_N16; Fanout = 3; COMB Node = 'aBc:inst|inst7~0'
-    Info: 3: + IC(0.277 ns) + CELL(0.378 ns) = 6.563 ns; Loc. = LCCOMB_X21_Y13_N8; Fanout = 1; COMB Node = 'aBc:inst7|inst3'
-    Info: 4: + IC(1.894 ns) + CELL(2.144 ns) = 10.601 ns; Loc. = PIN_H1; Fanout = 0; PIN Node = 'S[3]'
-    Info: Total cell delay = 3.725 ns ( 35.14 % )
-    Info: Total interconnect delay = 6.876 ns ( 64.86 % )
+Info: Longest tpd from source pin "B[1]" to destination pin "S[1]" is 8.837 ns
+    Info: 1: + IC(0.000 ns) + CELL(0.799 ns) = 0.799 ns; Loc. = PIN_W9; Fanout = 1; PIN Node = 'B[1]'
+    Info: 2: + IC(4.823 ns) + CELL(0.357 ns) = 5.979 ns; Loc. = LCCOMB_X31_Y20_N16; Fanout = 1; COMB Node = 'inst3'
+    Info: 3: + IC(0.876 ns) + CELL(1.982 ns) = 8.837 ns; Loc. = PIN_B6; Fanout = 0; PIN Node = 'S[1]'
+    Info: Total cell delay = 3.138 ns ( 35.51 % )
+    Info: Total interconnect delay = 5.699 ns ( 64.49 % )
 Info: Quartus II 64-Bit Classic Timing Analyzer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 288 megabytes
-    Info: Processing ended: Mon Apr 15 16:17:03 2019
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Wed Apr 17 16:54:31 2019
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 
 
