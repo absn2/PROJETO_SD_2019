@@ -1,48 +1,21 @@
-|MaiorMenorFuction
-S <= inst23.DB_MAX_OUTPUT_PORT_TYPE
-A[0] => EqualsBox:inst4.A
-A[0] => inst21.IN1
-A[1] => EqualsBox:inst3.A
-A[1] => inst20.IN1
-A[2] => EqualsBox:inst2.A
-A[2] => inst19.IN1
-A[3] => EqualsBox:inst1.A
-A[3] => inst.IN1
-B[0] => EqualsBox:inst4.B
-B[1] => EqualsBox:inst3.B
-B[2] => EqualsBox:inst2.B
-B[3] => EqualsBox:inst1.B
-
-
-|MaiorMenorFuction|EqualsBox:inst4
-S <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-A => inst5.IN0
-A => inst.IN0
-B => inst7.IN0
-B => inst.IN1
-
-
-|MaiorMenorFuction|EqualsBox:inst3
-S <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-A => inst5.IN0
-A => inst.IN0
-B => inst7.IN0
-B => inst.IN1
-
-
-|MaiorMenorFuction|EqualsBox:inst2
-S <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-A => inst5.IN0
-A => inst.IN0
-B => inst7.IN0
-B => inst.IN1
-
-
-|MaiorMenorFuction|EqualsBox:inst1
-S <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-A => inst5.IN0
-A => inst.IN0
-B => inst7.IN0
-B => inst.IN1
+|MaiorMenorGenericBlock
+ROUT <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+A => inst18.IN0
+A => inst21.IN0
+A => inst26.IN1
+A => inst27.IN0
+A => inst29.IN0
+B => inst18.IN1
+B => inst21.IN1
+B => inst26.IN2
+B => inst27.IN1
+B => inst28.IN0
+R => inst22.IN1
+R => inst24.IN0
+R => inst33.IN0
+AUX => inst.IN0
+AUX => inst26.IN0
+AUX => inst32.IN2
+AUXOUT <= inst32.DB_MAX_OUTPUT_PORT_TYPE
 
 
