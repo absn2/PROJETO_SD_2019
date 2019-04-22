@@ -20,52 +20,52 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-FunctionAnd
-# storage
-db|somadorSubtrador.(0).cnf
-db|somadorSubtrador.(0).cnf
-# case_insensitive
-# source_file
-functionand.bdf
-22783af330f6ccc2771e35e6de9b9eb
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# macro_sequence
-
-# end
-# entity
-FunctionXOR
-# storage
-db|somadorSubtrador.(1).cnf
-db|somadorSubtrador.(1).cnf
-# case_insensitive
-# source_file
-functionxor.bdf
-1c65145fa506cd5f2aa6de782b8c
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# macro_sequence
-
-# end
-# entity
-EqualsBox
+fullAdder
 # storage
 db|somadorSubtrador.(2).cnf
 db|somadorSubtrador.(2).cnf
 # case_insensitive
 # source_file
-equalsbox.bdf
-618670965c7abbaed15b98af85b4550
+fulladder.bdf
+89b4ee87cdbda9233f52a19fa83697d9
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
+}
+# hierarchies {
+AddSub:inst3|fullAdder:inst5
+AddSub:inst3|fullAdder:inst3
+AddSub:inst3|fullAdder:inst1
+AddSub:inst3|fullAdder:inst
+complemento2:inst4|fullAdder:inst14
+complemento2:inst4|fullAdder:inst13
+complemento2:inst4|fullAdder:inst12
+complemento2:inst4|fullAdder:inst5
+AddSub:inst6|fullAdder:inst5
+AddSub:inst6|fullAdder:inst3
+AddSub:inst6|fullAdder:inst1
+AddSub:inst6|fullAdder:inst
+}
+# macro_sequence
+
+# end
+# entity
+complemento2
+# storage
+db|somadorSubtrador.(3).cnf
+db|somadorSubtrador.(3).cnf
+# case_insensitive
+# source_file
+complemento2.bdf
+964b68a2c846b38462ea9839df73f7
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+complemento2:inst4
 }
 # macro_sequence
 
@@ -73,63 +73,137 @@ AUTO
 # entity
 EqualsSystem
 # storage
-db|somadorSubtrador.(3).cnf
-db|somadorSubtrador.(3).cnf
+db|somadorSubtrador.(4).cnf
+db|somadorSubtrador.(4).cnf
 # case_insensitive
 # source_file
 equalssystem.bdf
-e48bdbbfadecbaaf7b3d119da199dbde
+cf2e1eaf49adecf9c17315f84dfdbfd8
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# macro_sequence
-
-# end
-# entity
-MaiorMenorFuction
-# storage
-db|somadorSubtrador.(4).cnf
-db|somadorSubtrador.(4).cnf
-# case_insensitive
-# source_file
-maiormenorfuction.bdf
-fa1153badc6bf3e8a45cbf172755aa
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
+# hierarchies {
+EqualsSystem:inst5
 }
 # macro_sequence
 
 # end
 # entity
-MaiorMenorSpecialBlock
+EqualsBox
 # storage
 db|somadorSubtrador.(5).cnf
 db|somadorSubtrador.(5).cnf
 # case_insensitive
 # source_file
-maiormenorspecialblock.bdf
-a17a763bf83cc3599f2f17a3edea9496
+equalsbox.bdf
+ef7080e398651e7b562718ebc21339ed
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
 }
+# hierarchies {
+EqualsSystem:inst5|EqualsBox:inst1
+EqualsSystem:inst5|EqualsBox:inst3
+EqualsSystem:inst5|EqualsBox:inst
+EqualsSystem:inst5|EqualsBox:inst2
+}
 # macro_sequence
 
 # end
 # entity
-MaiorMenorGenericBlock
+MaiorMenor
 # storage
 db|somadorSubtrador.(6).cnf
 db|somadorSubtrador.(6).cnf
 # case_insensitive
 # source_file
-maiormenorgenericblock.bdf
-df341ff86a9d78aac06bd94a286616b2
+maiormenor.bdf
+cac7fcac263bb19fb9e4fe69e438b1f
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+MaiorMenor:inst7
+MaiorMenor:inst
+}
+# macro_sequence
+
+# end
+# entity
+FunctionAnd
+# storage
+db|somadorSubtrador.(7).cnf
+db|somadorSubtrador.(7).cnf
+# case_insensitive
+# source_file
+functionand.bdf
+13cdbad2f3f83e2e66cbe77f5e1eee9c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+FunctionAnd:inst2
+}
+# macro_sequence
+
+# end
+# entity
+FunctionXOR
+# storage
+db|somadorSubtrador.(8).cnf
+db|somadorSubtrador.(8).cnf
+# case_insensitive
+# source_file
+functionxor.bdf
+6b3c8c8edcaa84ff804f5191b3c0cc8d
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+FunctionXOR:inst1
+}
+# macro_sequence
+
+# end
+# entity
+AddSub
+# storage
+db|somadorSubtrador.(1).cnf
+db|somadorSubtrador.(1).cnf
+# case_insensitive
+# source_file
+addsub.bdf
+e6ab97529d12875ee112804ac03e262
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+AddSub:inst3
+AddSub:inst6
+}
+# macro_sequence
+
+# end
+# entity
+Mux
+# storage
+db|somadorSubtrador.(0).cnf
+db|somadorSubtrador.(0).cnf
+# case_insensitive
+# source_file
+mux.bdf
+82fed2c6401c4ca5dd14ed9331066cb
 26
 # internal_option {
 BLOCK_DESIGN_NAMING

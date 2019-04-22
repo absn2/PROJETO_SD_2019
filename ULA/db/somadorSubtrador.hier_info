@@ -1,21 +1,435 @@
-|MaiorMenorGenericBlock
-ROUT <= inst20.DB_MAX_OUTPUT_PORT_TYPE
-A => inst18.IN0
-A => inst21.IN0
-A => inst26.IN1
-A => inst27.IN0
-A => inst29.IN0
-B => inst18.IN1
-B => inst21.IN1
-B => inst26.IN2
-B => inst27.IN1
-B => inst28.IN0
-R => inst22.IN1
-R => inst24.IN0
-R => inst33.IN0
-AUX => inst.IN0
-AUX => inst26.IN0
-AUX => inst32.IN2
-AUXOUT <= inst32.DB_MAX_OUTPUT_PORT_TYPE
+|Mux
+Status <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => MaiorMenor:inst7.A[0]
+A[0] => MaiorMenor:inst.A[0]
+A[0] => EqualsSystem:inst5.A[0]
+A[0] => AddSub:inst3.A[0]
+A[0] => AddSub:inst6.A[0]
+A[0] => FunctionAnd:inst2.A[0]
+A[0] => FunctionXOR:inst1.A[0]
+A[1] => MaiorMenor:inst7.A[1]
+A[1] => MaiorMenor:inst.A[1]
+A[1] => EqualsSystem:inst5.A[1]
+A[1] => AddSub:inst3.A[1]
+A[1] => AddSub:inst6.A[1]
+A[1] => FunctionAnd:inst2.A[1]
+A[1] => FunctionXOR:inst1.A[1]
+A[2] => MaiorMenor:inst7.A[2]
+A[2] => MaiorMenor:inst.A[2]
+A[2] => EqualsSystem:inst5.A[2]
+A[2] => AddSub:inst3.A[2]
+A[2] => AddSub:inst6.A[2]
+A[2] => FunctionAnd:inst2.A[2]
+A[2] => FunctionXOR:inst1.A[2]
+A[3] => MaiorMenor:inst7.A[3]
+A[3] => MaiorMenor:inst.A[3]
+A[3] => EqualsSystem:inst5.A[3]
+A[3] => AddSub:inst3.A[3]
+A[3] => AddSub:inst6.A[3]
+A[3] => FunctionAnd:inst2.A[3]
+A[3] => FunctionXOR:inst1.A[3]
+B[0] => MaiorMenor:inst7.B[0]
+B[0] => MaiorMenor:inst.B[0]
+B[0] => EqualsSystem:inst5.B[0]
+B[0] => AddSub:inst3.B[0]
+B[0] => complemento2:inst4.B[0]
+B[0] => AddSub:inst6.B[0]
+B[0] => FunctionAnd:inst2.B[0]
+B[0] => FunctionXOR:inst1.B[0]
+B[1] => MaiorMenor:inst7.B[1]
+B[1] => MaiorMenor:inst.B[1]
+B[1] => EqualsSystem:inst5.B[1]
+B[1] => AddSub:inst3.B[1]
+B[1] => complemento2:inst4.B[1]
+B[1] => AddSub:inst6.B[1]
+B[1] => FunctionAnd:inst2.B[1]
+B[1] => FunctionXOR:inst1.B[1]
+B[2] => MaiorMenor:inst7.B[2]
+B[2] => MaiorMenor:inst.B[2]
+B[2] => EqualsSystem:inst5.B[2]
+B[2] => AddSub:inst3.B[2]
+B[2] => complemento2:inst4.B[2]
+B[2] => AddSub:inst6.B[2]
+B[2] => FunctionAnd:inst2.B[2]
+B[2] => FunctionXOR:inst1.B[2]
+B[3] => MaiorMenor:inst7.B[3]
+B[3] => MaiorMenor:inst.B[3]
+B[3] => EqualsSystem:inst5.B[3]
+B[3] => AddSub:inst3.B[3]
+B[3] => complemento2:inst4.B[3]
+B[3] => AddSub:inst6.B[3]
+B[3] => FunctionAnd:inst2.B[3]
+B[3] => FunctionXOR:inst1.B[3]
+S2 => inst14.IN1
+S2 => inst13.IN0
+S2 => inst8.IN0
+S2 => inst12[3].IN0
+S2 => inst12[2].IN0
+S2 => inst12[1].IN0
+S2 => inst12[0].IN0
+S2 => inst11[3].IN1
+S2 => inst11[2].IN1
+S2 => inst11[1].IN1
+S2 => inst11[0].IN1
+S1 => inst9.IN0
+S1 => inst15.IN2
+S1 => inst34.IN1
+S1 => inst16[3].IN2
+S1 => inst16[2].IN2
+S1 => inst16[1].IN2
+S1 => inst16[0].IN2
+S1 => inst12[3].IN1
+S1 => inst12[2].IN1
+S1 => inst12[1].IN1
+S1 => inst12[0].IN1
+S1 => inst11[3].IN2
+S1 => inst11[2].IN2
+S1 => inst11[1].IN2
+S1 => inst11[0].IN2
+S0 => inst10.IN0
+S0 => inst13.IN2
+S0 => inst15.IN3
+S0 => inst32.IN2
+S0 => inst17[3].IN3
+S0 => inst17[2].IN3
+S0 => inst17[1].IN3
+S0 => inst17[0].IN3
+S0 => inst11[3].IN3
+S0 => inst11[2].IN3
+S0 => inst11[1].IN3
+S0 => inst11[0].IN3
+Overflow <= inst30.DB_MAX_OUTPUT_PORT_TYPE
+P[0] <= inst22[0].DB_MAX_OUTPUT_PORT_TYPE
+P[1] <= inst22[1].DB_MAX_OUTPUT_PORT_TYPE
+P[2] <= inst22[2].DB_MAX_OUTPUT_PORT_TYPE
+P[3] <= inst22[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Mux|MaiorMenor:inst7
+S <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+B[0] => inst23.IN0
+B[0] => inst25.IN1
+B[1] => inst15.IN0
+B[1] => inst19.IN0
+B[2] => inst11.IN1
+B[2] => inst8.IN0
+B[3] => inst.IN0
+B[3] => inst4.IN1
+A[0] => inst24.IN1
+A[0] => inst25.IN0
+A[1] => inst16.IN1
+A[1] => inst19.IN1
+A[2] => inst11.IN0
+A[2] => inst10.IN1
+A[3] => inst17.IN0
+A[3] => inst4.IN0
+GorL => inst2.IN1
+GorL => inst7.IN0
+
+
+|Mux|MaiorMenor:inst
+S <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+B[0] => inst23.IN0
+B[0] => inst25.IN1
+B[1] => inst15.IN0
+B[1] => inst19.IN0
+B[2] => inst11.IN1
+B[2] => inst8.IN0
+B[3] => inst.IN0
+B[3] => inst4.IN1
+A[0] => inst24.IN1
+A[0] => inst25.IN0
+A[1] => inst16.IN1
+A[1] => inst19.IN1
+A[2] => inst11.IN0
+A[2] => inst10.IN1
+A[3] => inst17.IN0
+A[3] => inst4.IN0
+GorL => inst2.IN1
+GorL => inst7.IN0
+
+
+|Mux|EqualsSystem:inst5
+S <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => EqualsBox:inst2.A
+A[1] => EqualsBox:inst.A
+A[2] => EqualsBox:inst3.A
+A[3] => EqualsBox:inst1.A
+B[0] => EqualsBox:inst2.B
+B[1] => EqualsBox:inst.B
+B[2] => EqualsBox:inst3.B
+B[3] => EqualsBox:inst1.B
+
+
+|Mux|EqualsSystem:inst5|EqualsBox:inst1
+S <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A => inst5.IN0
+A => inst.IN0
+B => inst7.IN0
+B => inst.IN1
+
+
+|Mux|EqualsSystem:inst5|EqualsBox:inst3
+S <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A => inst5.IN0
+A => inst.IN0
+B => inst7.IN0
+B => inst.IN1
+
+
+|Mux|EqualsSystem:inst5|EqualsBox:inst
+S <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A => inst5.IN0
+A => inst.IN0
+B => inst7.IN0
+B => inst.IN1
+
+
+|Mux|EqualsSystem:inst5|EqualsBox:inst2
+S <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A => inst5.IN0
+A => inst.IN0
+B => inst7.IN0
+B => inst.IN1
+
+
+|Mux|AddSub:inst3
+Overflow <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => fullAdder:inst.A
+A[1] => fullAdder:inst1.A
+A[2] => fullAdder:inst3.A
+A[3] => fullAdder:inst5.A
+A/S => inst4.IN0
+A/S => inst2.IN1
+A/S => inst11.IN1
+A/S => inst10.IN1
+A/S => fullAdder:inst.CI
+B[0] => inst10.IN0
+B[1] => inst11.IN0
+B[2] => inst2.IN0
+B[3] => inst4.IN1
+S[0] <= fullAdder:inst.S
+S[1] <= fullAdder:inst1.S
+S[2] <= fullAdder:inst3.S
+S[3] <= fullAdder:inst5.S
+
+
+|Mux|AddSub:inst3|fullAdder:inst5
+S <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst6.IN0
+A => inst4.IN1
+B => inst2.IN1
+B => inst6.IN1
+B => inst4.IN0
+CI => inst3.IN1
+CI => inst5.IN1
+CO <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Mux|AddSub:inst3|fullAdder:inst3
+S <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst6.IN0
+A => inst4.IN1
+B => inst2.IN1
+B => inst6.IN1
+B => inst4.IN0
+CI => inst3.IN1
+CI => inst5.IN1
+CO <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Mux|AddSub:inst3|fullAdder:inst1
+S <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst6.IN0
+A => inst4.IN1
+B => inst2.IN1
+B => inst6.IN1
+B => inst4.IN0
+CI => inst3.IN1
+CI => inst5.IN1
+CO <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Mux|AddSub:inst3|fullAdder:inst
+S <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst6.IN0
+A => inst4.IN1
+B => inst2.IN1
+B => inst6.IN1
+B => inst4.IN0
+CI => inst3.IN1
+CI => inst5.IN1
+CO <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Mux|complemento2:inst4
+overFlow <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+B[0] => inst8.IN1
+B[1] => inst9.IN1
+B[2] => inst10.IN1
+B[3] => inst11.IN1
+S[0] <= fullAdder:inst5.S
+S[1] <= fullAdder:inst12.S
+S[2] <= fullAdder:inst13.S
+S[3] <= fullAdder:inst14.S
+
+
+|Mux|complemento2:inst4|fullAdder:inst14
+S <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst6.IN0
+A => inst4.IN1
+B => inst2.IN1
+B => inst6.IN1
+B => inst4.IN0
+CI => inst3.IN1
+CI => inst5.IN1
+CO <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Mux|complemento2:inst4|fullAdder:inst13
+S <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst6.IN0
+A => inst4.IN1
+B => inst2.IN1
+B => inst6.IN1
+B => inst4.IN0
+CI => inst3.IN1
+CI => inst5.IN1
+CO <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Mux|complemento2:inst4|fullAdder:inst12
+S <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst6.IN0
+A => inst4.IN1
+B => inst2.IN1
+B => inst6.IN1
+B => inst4.IN0
+CI => inst3.IN1
+CI => inst5.IN1
+CO <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Mux|complemento2:inst4|fullAdder:inst5
+S <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst6.IN0
+A => inst4.IN1
+B => inst2.IN1
+B => inst6.IN1
+B => inst4.IN0
+CI => inst3.IN1
+CI => inst5.IN1
+CO <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Mux|AddSub:inst6
+Overflow <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => fullAdder:inst.A
+A[1] => fullAdder:inst1.A
+A[2] => fullAdder:inst3.A
+A[3] => fullAdder:inst5.A
+A/S => inst4.IN0
+A/S => inst2.IN1
+A/S => inst11.IN1
+A/S => inst10.IN1
+A/S => fullAdder:inst.CI
+B[0] => inst10.IN0
+B[1] => inst11.IN0
+B[2] => inst2.IN0
+B[3] => inst4.IN1
+S[0] <= fullAdder:inst.S
+S[1] <= fullAdder:inst1.S
+S[2] <= fullAdder:inst3.S
+S[3] <= fullAdder:inst5.S
+
+
+|Mux|AddSub:inst6|fullAdder:inst5
+S <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst6.IN0
+A => inst4.IN1
+B => inst2.IN1
+B => inst6.IN1
+B => inst4.IN0
+CI => inst3.IN1
+CI => inst5.IN1
+CO <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Mux|AddSub:inst6|fullAdder:inst3
+S <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst6.IN0
+A => inst4.IN1
+B => inst2.IN1
+B => inst6.IN1
+B => inst4.IN0
+CI => inst3.IN1
+CI => inst5.IN1
+CO <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Mux|AddSub:inst6|fullAdder:inst1
+S <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst6.IN0
+A => inst4.IN1
+B => inst2.IN1
+B => inst6.IN1
+B => inst4.IN0
+CI => inst3.IN1
+CI => inst5.IN1
+CO <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Mux|AddSub:inst6|fullAdder:inst
+S <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst6.IN0
+A => inst4.IN1
+B => inst2.IN1
+B => inst6.IN1
+B => inst4.IN0
+CI => inst3.IN1
+CI => inst5.IN1
+CO <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Mux|FunctionAnd:inst2
+S[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst.IN0
+A[1] => inst3.IN0
+A[2] => inst2.IN1
+A[3] => inst4.IN1
+B[0] => inst.IN1
+B[1] => inst3.IN1
+B[2] => inst2.IN0
+B[3] => inst4.IN0
+
+
+|Mux|FunctionXOR:inst1
+S[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst.IN0
+A[1] => inst2.IN0
+A[2] => inst3.IN0
+A[3] => inst4.IN0
+B[0] => inst.IN1
+B[1] => inst2.IN1
+B[2] => inst3.IN1
+B[3] => inst4.IN1
 
 
