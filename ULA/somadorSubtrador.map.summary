@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Mon Apr 22 17:19:02 2019
+Analysis & Synthesis Status : Successful - Tue Apr 23 17:17:04 2019
 Quartus II 64-Bit Version : 9.1 Build 350 03/24/2010 SP 2 SJ Full Version
 Revision Name : somadorSubtrador
-Top-level Entity Name : Mux
+Top-level Entity Name : ULA
 Family : Stratix II
 Logic utilization : N/A
-    Combinational ALUTs : 25
+    Combinational ALUTs : 12
     Dedicated logic registers : 0
 Total registers : 0
-Total pins : 17
+Total pins : 13
 Total virtual pins : 0
 Total block memory bits : 0
 DSP block 9-bit elements : 0

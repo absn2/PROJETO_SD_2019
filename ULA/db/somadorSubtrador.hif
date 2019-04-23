@@ -20,161 +20,6 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-fullAdder
-# storage
-db|somadorSubtrador.(2).cnf
-db|somadorSubtrador.(2).cnf
-# case_insensitive
-# source_file
-fulladder.bdf
-89b4ee87cdbda9233f52a19fa83697d9
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-AddSub:inst3|fullAdder:inst5
-AddSub:inst3|fullAdder:inst3
-AddSub:inst3|fullAdder:inst1
-AddSub:inst3|fullAdder:inst
-complemento2:inst4|fullAdder:inst14
-complemento2:inst4|fullAdder:inst13
-complemento2:inst4|fullAdder:inst12
-complemento2:inst4|fullAdder:inst5
-AddSub:inst6|fullAdder:inst5
-AddSub:inst6|fullAdder:inst3
-AddSub:inst6|fullAdder:inst1
-AddSub:inst6|fullAdder:inst
-}
-# macro_sequence
-
-# end
-# entity
-complemento2
-# storage
-db|somadorSubtrador.(3).cnf
-db|somadorSubtrador.(3).cnf
-# case_insensitive
-# source_file
-complemento2.bdf
-964b68a2c846b38462ea9839df73f7
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-complemento2:inst4
-}
-# macro_sequence
-
-# end
-# entity
-EqualsSystem
-# storage
-db|somadorSubtrador.(4).cnf
-db|somadorSubtrador.(4).cnf
-# case_insensitive
-# source_file
-equalssystem.bdf
-cf2e1eaf49adecf9c17315f84dfdbfd8
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-EqualsSystem:inst5
-}
-# macro_sequence
-
-# end
-# entity
-EqualsBox
-# storage
-db|somadorSubtrador.(5).cnf
-db|somadorSubtrador.(5).cnf
-# case_insensitive
-# source_file
-equalsbox.bdf
-ef7080e398651e7b562718ebc21339ed
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-EqualsSystem:inst5|EqualsBox:inst1
-EqualsSystem:inst5|EqualsBox:inst3
-EqualsSystem:inst5|EqualsBox:inst
-EqualsSystem:inst5|EqualsBox:inst2
-}
-# macro_sequence
-
-# end
-# entity
-MaiorMenor
-# storage
-db|somadorSubtrador.(6).cnf
-db|somadorSubtrador.(6).cnf
-# case_insensitive
-# source_file
-maiormenor.bdf
-cac7fcac263bb19fb9e4fe69e438b1f
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-MaiorMenor:inst7
-MaiorMenor:inst
-}
-# macro_sequence
-
-# end
-# entity
-FunctionAnd
-# storage
-db|somadorSubtrador.(7).cnf
-db|somadorSubtrador.(7).cnf
-# case_insensitive
-# source_file
-functionand.bdf
-13cdbad2f3f83e2e66cbe77f5e1eee9c
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-FunctionAnd:inst2
-}
-# macro_sequence
-
-# end
-# entity
-FunctionXOR
-# storage
-db|somadorSubtrador.(8).cnf
-db|somadorSubtrador.(8).cnf
-# case_insensitive
-# source_file
-functionxor.bdf
-6b3c8c8edcaa84ff804f5191b3c0cc8d
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-FunctionXOR:inst1
-}
-# macro_sequence
-
-# end
-# entity
 AddSub
 # storage
 db|somadorSubtrador.(1).cnf
@@ -189,8 +34,8 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-AddSub:inst3
-AddSub:inst6
+Mux:inst|AddSub:inst3
+Mux:inst|AddSub:inst6
 }
 # macro_sequence
 
@@ -210,7 +55,182 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
+Mux:inst
+}
+# macro_sequence
+
+# end
+# entity
+ULA
+# storage
+db|somadorSubtrador.(2).cnf
+db|somadorSubtrador.(2).cnf
+# case_insensitive
+# source_file
+ula.bdf
+a9c6fc7bb975fae7f6bcac48c5b6434
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
 |
+}
+# macro_sequence
+
+# end
+# entity
+MaiorMenor
+# storage
+db|somadorSubtrador.(3).cnf
+db|somadorSubtrador.(3).cnf
+# case_insensitive
+# source_file
+maiormenor.bdf
+9721d16d5fceb229f575974945b8ec8c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Mux:inst|MaiorMenor:inst7
+Mux:inst|MaiorMenor:inst
+}
+# macro_sequence
+
+# end
+# entity
+EqualsSystem
+# storage
+db|somadorSubtrador.(4).cnf
+db|somadorSubtrador.(4).cnf
+# case_insensitive
+# source_file
+equalssystem.bdf
+e48bdbbfadecbaaf7b3d119da199dbde
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Mux:inst|EqualsSystem:inst5
+}
+# macro_sequence
+
+# end
+# entity
+EqualsBox
+# storage
+db|somadorSubtrador.(5).cnf
+db|somadorSubtrador.(5).cnf
+# case_insensitive
+# source_file
+equalsbox.bdf
+618670965c7abbaed15b98af85b4550
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Mux:inst|EqualsSystem:inst5|EqualsBox:inst1
+Mux:inst|EqualsSystem:inst5|EqualsBox:inst3
+Mux:inst|EqualsSystem:inst5|EqualsBox:inst
+Mux:inst|EqualsSystem:inst5|EqualsBox:inst2
+}
+# macro_sequence
+
+# end
+# entity
+fullAdder
+# storage
+db|somadorSubtrador.(6).cnf
+db|somadorSubtrador.(6).cnf
+# case_insensitive
+# source_file
+fulladder.bdf
+2562d0237bdd25654d489709ca29c30
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Mux:inst|AddSub:inst3|fullAdder:inst5
+Mux:inst|AddSub:inst3|fullAdder:inst3
+Mux:inst|AddSub:inst3|fullAdder:inst1
+Mux:inst|AddSub:inst3|fullAdder:inst
+Mux:inst|complemento2:inst4|fullAdder:inst14
+Mux:inst|complemento2:inst4|fullAdder:inst13
+Mux:inst|complemento2:inst4|fullAdder:inst12
+Mux:inst|complemento2:inst4|fullAdder:inst5
+Mux:inst|AddSub:inst6|fullAdder:inst5
+Mux:inst|AddSub:inst6|fullAdder:inst3
+Mux:inst|AddSub:inst6|fullAdder:inst1
+Mux:inst|AddSub:inst6|fullAdder:inst
+}
+# macro_sequence
+
+# end
+# entity
+complemento2
+# storage
+db|somadorSubtrador.(7).cnf
+db|somadorSubtrador.(7).cnf
+# case_insensitive
+# source_file
+complemento2.bdf
+892cd338e9c42d8a7aa4c9f81bc4b40
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Mux:inst|complemento2:inst4
+}
+# macro_sequence
+
+# end
+# entity
+FunctionAnd
+# storage
+db|somadorSubtrador.(8).cnf
+db|somadorSubtrador.(8).cnf
+# case_insensitive
+# source_file
+functionand.bdf
+22783af330f6ccc2771e35e6de9b9eb
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Mux:inst|FunctionAnd:inst2
+}
+# macro_sequence
+
+# end
+# entity
+FunctionXOR
+# storage
+db|somadorSubtrador.(9).cnf
+db|somadorSubtrador.(9).cnf
+# case_insensitive
+# source_file
+functionxor.bdf
+1c65145fa506cd5f2aa6de782b8c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Mux:inst|FunctionXOR:inst1
 }
 # macro_sequence
 
