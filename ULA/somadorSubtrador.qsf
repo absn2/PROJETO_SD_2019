@@ -46,7 +46,7 @@ set_global_assignment -name LAST_QUARTUS_VERSION "9.1 SP2"
 # Analysis & Synthesis Assignments
 # ================================
 set_global_assignment -name FAMILY "Stratix II"
-set_global_assignment -name TOP_LEVEL_ENTITY ULA
+set_global_assignment -name TOP_LEVEL_ENTITY DisplayULA
 set_global_assignment -name DEVICE_FILTER_SPEED_GRADE FASTEST
 
 # Fitter Assignments
@@ -102,6 +102,14 @@ set_global_assignment -name BDF_FILE EqualsSystem.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Mux.vwf
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE Mux.vwf
 set_global_assignment -name BDF_FILE ULA.bdf
+set_global_assignment -name BDF_FILE DisplayULA.bdf
+set_global_assignment -name BDF_FILE DisplayA.bdf
+set_global_assignment -name BDF_FILE DisplayB.bdf
+set_global_assignment -name BDF_FILE DisplayC.bdf
+set_global_assignment -name BDF_FILE DisplayD.bdf
+set_global_assignment -name BDF_FILE DisplayE.bdf
+set_global_assignment -name BDF_FILE DisplayF.bdf
+set_global_assignment -name BDF_FILE DisplayG.bdf
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
