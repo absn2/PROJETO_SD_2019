@@ -410,7 +410,7 @@ applicable agreement for further details.
 (symbol
 	(rect 592 224 688 320)
 	(text "fullAdder" (rect 82 5 96 56)(font "Arial" (font_size 8))(vertical))
-	(text "inst6" (rect 4 8 16 31)(font "Arial" )(vertical))
+	(text "inst5" (rect 4 8 16 31)(font "Arial" )(vertical))
 	(port
 		(pt 64 0)
 		(input)
