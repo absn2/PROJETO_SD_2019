@@ -39,9 +39,9 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 240 736 256 912)
+	(rect 416 720 432 896)
 	(text "OUTPUT" (rect 6 1 16 39)(font "Arial" (font_size 6))(vertical))
-	(text "D[6..0]" (rect 4 90 16 124)(font "Arial" )(vertical))
+	(text "Sinal[6..0]" (rect 4 90 16 139)(font "Arial" )(vertical))
 	(pt 8 0)
 	(drawing
 		(line (pt 8 0)(pt 8 52)(line_width 1))
@@ -56,9 +56,9 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 416 720 432 896)
+	(rect 240 736 256 912)
 	(text "OUTPUT" (rect 6 1 16 39)(font "Arial" (font_size 6))(vertical))
-	(text "M[6..0]" (rect 4 90 16 124)(font "Arial" )(vertical))
+	(text "Numero[6..0]" (rect 4 90 16 154)(font "Arial" )(vertical))
 	(pt 8 0)
 	(drawing
 		(line (pt 8 0)(pt 8 52)(line_width 1))

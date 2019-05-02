@@ -291,16 +291,6 @@ applicable agreement for further details.
 	(pt 808 216)
 )
 (connector
-	(pt 424 328)
-	(pt 416 328)
-	(bus)
-)
-(connector
-	(pt 560 328)
-	(pt 424 328)
-	(bus)
-)
-(connector
 	(pt 696 328)
 	(pt 560 328)
 	(bus)
@@ -334,6 +324,16 @@ applicable agreement for further details.
 	(text "S[3]" (rect 784 301 796 321)(font "Arial" )(vertical))
 	(pt 800 280)
 	(pt 800 328)
+)
+(connector
+	(pt 352 328)
+	(pt 424 328)
+	(bus)
+)
+(connector
+	(pt 424 328)
+	(pt 560 328)
+	(bus)
 )
 (junction (pt 416 96))
 (junction (pt 432 176))

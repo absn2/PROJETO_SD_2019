@@ -71,7 +71,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 656 168 832 184)
+	(rect 624 168 800 184)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "STATUS" (rect 90 0 131 12)(font "Arial" ))
 	(pt 0 8)
@@ -87,7 +87,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 656 136 832 152)
+	(rect 624 136 800 152)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "OverFlow" (rect 90 0 137 12)(font "Arial" ))
 	(pt 0 8)
@@ -103,9 +103,9 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 720 56 896 72)
+	(rect 624 32 800 48)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "D2[6..0]" (rect 90 0 130 12)(font "Arial" ))
+	(text "Sinal[6..0]" (rect 90 0 139 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8)(line_width 1))
@@ -119,9 +119,9 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 712 24 888 40)
+	(rect 624 48 800 64)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "D1[6..0]" (rect 90 0 130 12)(font "Arial" ))
+	(text "Numero[6..0]" (rect 90 0 154 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8)(line_width 1))
@@ -131,6 +131,35 @@ applicable agreement for further details.
 		(line (pt 78 4)(pt 82 8)(line_width 1))
 		(line (pt 82 8)(pt 78 12)(line_width 1))
 		(line (pt 78 12)(pt 82 8)(line_width 1))
+	)
+)
+(symbol
+	(rect 448 8 608 104)
+	(text "DisplayULA" (rect 5 0 71 14)(font "Arial" (font_size 8)))
+	(text "inst1" (rect 8 80 31 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "S[3..0]" (rect 0 0 36 14)(font "Arial" (font_size 8)))
+		(text "S[3..0]" (rect 21 27 57 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 160 32)
+		(output)
+		(text "Sinal[6..0]" (rect 0 0 55 14)(font "Arial" (font_size 8)))
+		(text "Sinal[6..0]" (rect 84 27 139 41)(font "Arial" (font_size 8)))
+		(line (pt 160 32)(pt 144 32)(line_width 3))
+	)
+	(port
+		(pt 160 48)
+		(output)
+		(text "Numero[6..0]" (rect 0 0 71 14)(font "Arial" (font_size 8)))
+		(text "Numero[6..0]" (rect 68 43 139 57)(font "Arial" (font_size 8)))
+		(line (pt 160 48)(pt 144 48)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 144 80)(line_width 1))
 	)
 )
 (symbol
@@ -197,35 +226,6 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 128 112)(line_width 1))
 	)
 )
-(symbol
-	(rect 496 8 624 104)
-	(text "DisplayULA" (rect 5 0 71 14)(font "Arial" (font_size 8)))
-	(text "inst1" (rect 8 80 31 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "S[3..0]" (rect 0 0 36 14)(font "Arial" (font_size 8)))
-		(text "S[3..0]" (rect 21 27 57 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 128 32)
-		(output)
-		(text "M[6..0]" (rect 0 0 37 14)(font "Arial" (font_size 8)))
-		(text "M[6..0]" (rect 70 27 107 41)(font "Arial" (font_size 8)))
-		(line (pt 128 32)(pt 112 32)(line_width 3))
-	)
-	(port
-		(pt 128 48)
-		(output)
-		(text "D[6..0]" (rect 0 0 36 14)(font "Arial" (font_size 8)))
-		(text "D[6..0]" (rect 71 43 107 57)(font "Arial" (font_size 8)))
-		(line (pt 128 48)(pt 112 48)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 112 80)(line_width 1))
-	)
-)
 (connector
 	(pt 104 144)
 	(pt 216 144)
@@ -252,10 +252,6 @@ applicable agreement for further details.
 	(pt 136 176)
 )
 (connector
-	(pt 360 144)
-	(pt 656 144)
-)
-(connector
 	(pt 136 208)
 	(pt 136 240)
 	(bus)
@@ -276,10 +272,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 360 176)
-	(pt 656 176)
-)
-(connector
 	(pt 360 160)
 	(pt 432 160)
 	(bus)
@@ -290,39 +282,27 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
+	(pt 448 40)
 	(pt 432 40)
-	(pt 496 40)
 	(bus)
 )
 (connector
-	(pt 712 56)
-	(pt 712 64)
-	(bus)
-)
-(connector
-	(pt 712 64)
-	(pt 720 64)
-	(bus)
-)
-(connector
+	(pt 608 56)
 	(pt 624 56)
-	(pt 712 56)
 	(bus)
 )
 (connector
+	(pt 608 40)
 	(pt 624 40)
-	(pt 632 40)
 	(bus)
 )
 (connector
-	(pt 632 40)
-	(pt 632 32)
-	(bus)
+	(pt 360 144)
+	(pt 624 144)
 )
 (connector
-	(pt 632 32)
-	(pt 712 32)
-	(bus)
+	(pt 360 176)
+	(pt 624 176)
 )
 (junction (pt 136 208))
 (junction (pt 136 192))

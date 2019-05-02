@@ -20,7 +20,7 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 144 112)
+	(rect 16 16 176 112)
 	(text "DisplayULA" (rect 5 0 71 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 80 25 92)(font "Arial" ))
 	(port
@@ -31,20 +31,20 @@ applicable agreement for further details.
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
-		(pt 128 32)
+		(pt 160 32)
 		(output)
-		(text "M[6..0]" (rect 0 0 37 14)(font "Arial" (font_size 8)))
-		(text "M[6..0]" (rect 70 27 107 41)(font "Arial" (font_size 8)))
-		(line (pt 128 32)(pt 112 32)(line_width 3))
+		(text "Sinal[6..0]" (rect 0 0 55 14)(font "Arial" (font_size 8)))
+		(text "Sinal[6..0]" (rect 84 27 139 41)(font "Arial" (font_size 8)))
+		(line (pt 160 32)(pt 144 32)(line_width 3))
 	)
 	(port
-		(pt 128 48)
+		(pt 160 48)
 		(output)
-		(text "D[6..0]" (rect 0 0 36 14)(font "Arial" (font_size 8)))
-		(text "D[6..0]" (rect 71 43 107 57)(font "Arial" (font_size 8)))
-		(line (pt 128 48)(pt 112 48)(line_width 3))
+		(text "Numero[6..0]" (rect 0 0 71 14)(font "Arial" (font_size 8)))
+		(text "Numero[6..0]" (rect 68 43 139 57)(font "Arial" (font_size 8)))
+		(line (pt 160 48)(pt 144 48)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 112 80)(line_width 1))
+		(rectangle (rect 16 16 144 80)(line_width 1))
 	)
 )

@@ -880,7 +880,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 128 -72 144 -40)
+	(rect 136 -88 152 -56)
 	(text "VCC" (rect 0 5 10 25)(font "Arial" (font_size 6))(vertical))
 	(text "inst24" (rect 5 0 17 29)(font "Arial" )(vertical)(invisible))
 	(port
@@ -1491,30 +1491,8 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 152 -56)
-	(pt 152 -64)
-)
-(connector
-	(pt 144 -56)
-	(pt 152 -56)
-)
-(connector
-	(pt 152 -64)
-	(pt 368 -64)
-)
-(connector
 	(pt 312 -200)
 	(pt 312 -96)
-	(bus)
-)
-(connector
-	(pt 368 -80)
-	(pt 368 -64)
-	(bus)
-)
-(connector
-	(pt 368 -64)
-	(pt 368 8)
 	(bus)
 )
 (connector
@@ -2246,6 +2224,33 @@ applicable agreement for further details.
 	(pt 1640 -224)
 	(pt 1656 -224)
 )
+(connector
+	(pt 368 -80)
+	(pt 360 -80)
+	(bus)
+)
+(connector
+	(pt 368 8)
+	(pt 360 8)
+	(bus)
+)
+(connector
+	(pt 360 -80)
+	(pt 360 8)
+	(bus)
+)
+(connector
+	(pt 160 -72)
+	(pt 160 -64)
+)
+(connector
+	(pt 152 -72)
+	(pt 160 -72)
+)
+(connector
+	(pt 160 -64)
+	(pt 368 -64)
+)
 (junction (pt 368 192))
 (junction (pt 312 144))
 (junction (pt 336 192))
@@ -2266,7 +2271,6 @@ applicable agreement for further details.
 (junction (pt 1240 -48))
 (junction (pt 1264 -32))
 (junction (pt 312 -96))
-(junction (pt 368 -64))
 (junction (pt 368 8))
 (junction (pt 312 112))
 (junction (pt 368 128))
