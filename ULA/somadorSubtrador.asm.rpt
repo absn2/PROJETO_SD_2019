@@ -1,6 +1,6 @@
 Assembler report for somadorSubtrador
-Thu May 02 13:16:19 2019
-Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+Thu May 02 17:17:43 2019
+Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
 
 
 ---------------------
@@ -10,8 +10,8 @@ Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/absn2/Desktop/PROJETO_SD_2019/ULA/somadorSubtrador.sof
-  6. Assembler Device Options: C:/Users/absn2/Desktop/PROJETO_SD_2019/ULA/somadorSubtrador.pof
+  5. Assembler Device Options: D:/Users/absn2/Desktop/PROJETO_SD_2019/ULA/somadorSubtrador.sof
+  6. Assembler Device Options: D:/Users/absn2/Desktop/PROJETO_SD_2019/ULA/somadorSubtrador.pof
   7. Assembler Messages
 
 
@@ -38,9 +38,9 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu May 02 13:16:19 2019 ;
+; Assembler Status      ; Successful - Thu May 02 17:17:43 2019 ;
 ; Revision Name         ; somadorSubtrador                      ;
-; Top-level Entity Name ; DisplayBCDCOMPLETO                    ;
+; Top-level Entity Name ; FunctionXOR                           ;
 ; Family                ; Stratix II                            ;
 ; Device                ; EP2S15F484C3                          ;
 +-----------------------+---------------------------------------+
@@ -84,30 +84,30 @@ applicable agreement for further details.
 +-----------------------------------------------------------------+
 ; File Name                                                       ;
 +-----------------------------------------------------------------+
-; C:/Users/absn2/Desktop/PROJETO_SD_2019/ULA/somadorSubtrador.sof ;
-; C:/Users/absn2/Desktop/PROJETO_SD_2019/ULA/somadorSubtrador.pof ;
+; D:/Users/absn2/Desktop/PROJETO_SD_2019/ULA/somadorSubtrador.sof ;
+; D:/Users/absn2/Desktop/PROJETO_SD_2019/ULA/somadorSubtrador.pof ;
 +-----------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/absn2/Desktop/PROJETO_SD_2019/ULA/somadorSubtrador.sof ;
+; Assembler Device Options: D:/Users/absn2/Desktop/PROJETO_SD_2019/ULA/somadorSubtrador.sof ;
 +----------------+--------------------------------------------------------------------------+
 ; Option         ; Setting                                                                  ;
 +----------------+--------------------------------------------------------------------------+
 ; Device         ; EP2S15F484C3                                                             ;
-; JTAG usercode  ; 0x00276E70                                                               ;
-; Checksum       ; 0x00276E70                                                               ;
+; JTAG usercode  ; 0x00275A01                                                               ;
+; Checksum       ; 0x00275A01                                                               ;
 +----------------+--------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/absn2/Desktop/PROJETO_SD_2019/ULA/somadorSubtrador.pof ;
+; Assembler Device Options: D:/Users/absn2/Desktop/PROJETO_SD_2019/ULA/somadorSubtrador.pof ;
 +--------------------+----------------------------------------------------------------------+
 ; Option             ; Setting                                                              ;
 +--------------------+----------------------------------------------------------------------+
 ; Device             ; EPC16                                                                ;
 ; JTAG usercode      ; 0xFFFFFFFF                                                           ;
-; Checksum           ; 0x1EF62D6A                                                           ;
+; Checksum           ; 0x1EF66416                                                           ;
 ; Compression Ratio  ; 3                                                                    ;
 +--------------------+----------------------------------------------------------------------+
 
@@ -116,16 +116,16 @@ applicable agreement for further details.
 ; Assembler Messages ;
 +--------------------+
 Info: *******************************************************************
-Info: Running Quartus II Assembler
-    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Thu May 02 13:16:17 2019
+Info: Running Quartus II 64-Bit Assembler
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+    Info: Processing started: Thu May 02 17:17:42 2019
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off projetoSD -c somadorSubtrador
 Info: Writing out detailed assembly data for power analysis
 Info: Assembler is generating device programming files
-Info: Quartus II Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 293 megabytes
-    Info: Processing ended: Thu May 02 13:16:19 2019
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 339 megabytes
+    Info: Processing ended: Thu May 02 17:17:43 2019
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 

@@ -1,6 +1,6 @@
 Analysis & Synthesis report for somadorSubtrador
-Thu May 02 13:16:10 2019
-Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+Thu May 02 17:17:36 2019
+Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
 
 
 ---------------------
@@ -37,25 +37,25 @@ applicable agreement for further details.
 
 
 
-+------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                 ;
-+-------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status   ; Successful - Thu May 02 13:16:10 2019        ;
-; Quartus II Version            ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
-; Revision Name                 ; somadorSubtrador                             ;
-; Top-level Entity Name         ; DisplayBCDCOMPLETO                           ;
-; Family                        ; Stratix II                                   ;
-; Logic utilization             ; N/A                                          ;
-;     Combinational ALUTs       ; 7                                            ;
-;     Dedicated logic registers ; 0                                            ;
-; Total registers               ; 0                                            ;
-; Total pins                    ; 19                                           ;
-; Total virtual pins            ; 0                                            ;
-; Total block memory bits       ; 0                                            ;
-; DSP block 9-bit elements      ; 0                                            ;
-; Total PLLs                    ; 0                                            ;
-; Total DLLs                    ; 0                                            ;
-+-------------------------------+----------------------------------------------+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++-------------------------------+-----------------------------------------------+
+; Analysis & Synthesis Status   ; Successful - Thu May 02 17:17:36 2019         ;
+; Quartus II 64-Bit Version     ; 9.1 Build 350 03/24/2010 SP 2 SJ Full Version ;
+; Revision Name                 ; somadorSubtrador                              ;
+; Top-level Entity Name         ; FunctionXOR                                   ;
+; Family                        ; Stratix II                                    ;
+; Logic utilization             ; N/A                                           ;
+;     Combinational ALUTs       ; 4                                             ;
+;     Dedicated logic registers ; 0                                             ;
+; Total registers               ; 0                                             ;
+; Total pins                    ; 12                                            ;
+; Total virtual pins            ; 0                                             ;
+; Total block memory bits       ; 0                                             ;
+; DSP block 9-bit elements      ; 0                                             ;
+; Total PLLs                    ; 0                                             ;
+; Total DLLs                    ; 0                                             ;
++-------------------------------+-----------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; DisplayBCDCOMPLETO ; somadorSubtrador   ;
+; Top-level entity name                                                      ; FunctionXOR        ; somadorSubtrador   ;
 ; Family name                                                                ; Stratix II         ; Cyclone IV GX      ;
 ; Use Generated Physical Constraints File                                    ; Off                ;                    ;
 ; Synchronization Register Chain Length                                      ; 2                  ; 3                  ;
@@ -155,64 +155,61 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                      ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                      ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------+
-; DisplayBCD.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/absn2/Desktop/PROJETO_SD_2019/ULA/DisplayBCD.bdf         ;
-; DisplayBCDCOMPLETO.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/absn2/Desktop/PROJETO_SD_2019/ULA/DisplayBCDCOMPLETO.bdf ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                               ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                               ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------+
+; FunctionXOR.bdf                  ; yes             ; User Block Diagram/Schematic File  ; D:/Users/absn2/Desktop/PROJETO_SD_2019/ULA/FunctionXOR.bdf ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------+
 
 
-+-------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary           ;
-+-----------------------------------------------+-------+
-; Resource                                      ; Usage ;
-+-----------------------------------------------+-------+
-; Estimated ALUTs Used                          ; 7     ;
-; Dedicated logic registers                     ; 0     ;
-;                                               ;       ;
-; Estimated ALUTs Unavailable                   ; 0     ;
-;                                               ;       ;
-; Total combinational functions                 ; 7     ;
-; Combinational ALUT usage by number of inputs  ;       ;
-;     -- 7 input functions                      ; 0     ;
-;     -- 6 input functions                      ; 0     ;
-;     -- 5 input functions                      ; 0     ;
-;     -- 4 input functions                      ; 3     ;
-;     -- <=3 input functions                    ; 4     ;
-;                                               ;       ;
-; Combinational ALUTs by mode                   ;       ;
-;     -- normal mode                            ; 7     ;
-;     -- extended LUT mode                      ; 0     ;
-;     -- arithmetic mode                        ; 0     ;
-;     -- shared arithmetic mode                 ; 0     ;
-;                                               ;       ;
-; Estimated ALUT/register pairs used            ; 7     ;
-;                                               ;       ;
-; Total registers                               ; 0     ;
-;     -- Dedicated logic registers              ; 0     ;
-;     -- I/O registers                          ; 0     ;
-;                                               ;       ;
-; Estimated ALMs:  partially or completely used ; 4     ;
-;                                               ;       ;
-; I/O pins                                      ; 19    ;
-; Maximum fan-out node                          ; S[1]  ;
-; Maximum fan-out                               ; 7     ;
-; Total fan-out                                 ; 33    ;
-; Average fan-out                               ; 1.27  ;
-+-----------------------------------------------+-------+
++------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary          ;
++----------------------------------------------+-------+
+; Resource                                     ; Usage ;
++----------------------------------------------+-------+
+; Estimated ALUTs Used                         ; 4     ;
+; Dedicated logic registers                    ; 0     ;
+;                                              ;       ;
+; Estimated ALUTs Unavailable                  ; 0     ;
+;                                              ;       ;
+; Total combinational functions                ; 4     ;
+; Combinational ALUT usage by number of inputs ;       ;
+;     -- 7 input functions                     ; 0     ;
+;     -- 6 input functions                     ; 0     ;
+;     -- 5 input functions                     ; 0     ;
+;     -- 4 input functions                     ; 0     ;
+;     -- <=3 input functions                   ; 4     ;
+;                                              ;       ;
+; Combinational ALUTs by mode                  ;       ;
+;     -- normal mode                           ; 4     ;
+;     -- extended LUT mode                     ; 0     ;
+;     -- arithmetic mode                       ; 0     ;
+;     -- shared arithmetic mode                ; 0     ;
+;                                              ;       ;
+; Estimated ALUT/register pairs used           ; 0     ;
+;                                              ;       ;
+; Total registers                              ; 0     ;
+;     -- Dedicated logic registers             ; 0     ;
+;     -- I/O registers                         ; 0     ;
+;                                              ;       ;
+;                                              ;       ;
+; I/O pins                                     ; 12    ;
+; Maximum fan-out node                         ; inst4 ;
+; Maximum fan-out                              ; 1     ;
+; Total fan-out                                ; 12    ;
+; Average fan-out                              ; 0.75  ;
++----------------------------------------------+-------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                           ;
-+----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                 ; Library Name ;
-+----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------------+--------------+
-; |DisplayBCDCOMPLETO        ; 7 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 19   ; 0            ; |DisplayBCDCOMPLETO                 ; work         ;
-;    |DisplayBCD:inst|       ; 7 (7)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |DisplayBCDCOMPLETO|DisplayBCD:inst ;              ;
-+----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                           ;
++----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
+; |FunctionXOR               ; 4 (4)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 12   ; 0            ; |FunctionXOR        ; work         ;
++----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -235,73 +232,65 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II Analysis & Synthesis
-    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Thu May 02 13:16:08 2019
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+    Info: Processing started: Thu May 02 17:17:35 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off projetoSD -c somadorSubtrador
 Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
-Warning: Entity "Mux" obtained from "C:/Users/absn2/Desktop/PROJETO_SD_2019/ULA/Mux.bdf" instead of from Quartus II megafunction library
+Info: Found 1 design units, including 1 entities, in source file bcd.bdf
+    Info: Found entity 1: BCD
+Info: Found 1 design units, including 1 entities, in source file ula.bdf
+    Info: Found entity 1: ULA
+Info: Found 1 design units, including 1 entities, in source file displaybcdcompleto.bdf
+    Info: Found entity 1: DisplayBCDCOMPLETO
+Info: Found 1 design units, including 1 entities, in source file displaybcd.bdf
+    Info: Found entity 1: DisplayBCD
+Info: Found 1 design units, including 1 entities, in source file somadorbcd.bdf
+    Info: Found entity 1: SomadorBCD
+Info: Found 1 design units, including 1 entities, in source file displayula.bdf
+    Info: Found entity 1: DisplayULA
+Info: Found 1 design units, including 1 entities, in source file displayg.bdf
+    Info: Found entity 1: DisplayG
+Info: Found 1 design units, including 1 entities, in source file displayf.bdf
+    Info: Found entity 1: DisplayF
+Info: Found 1 design units, including 1 entities, in source file displaye.bdf
+    Info: Found entity 1: DisplayE
+Info: Found 1 design units, including 1 entities, in source file displayd.bdf
+    Info: Found entity 1: DisplayD
+Info: Found 1 design units, including 1 entities, in source file displayc.bdf
+    Info: Found entity 1: DisplayC
+Info: Found 1 design units, including 1 entities, in source file displayb.bdf
+    Info: Found entity 1: DisplayB
+Info: Found 1 design units, including 1 entities, in source file displaya.bdf
+    Info: Found entity 1: DisplayA
+Warning: Entity "Mux" obtained from "D:/Users/absn2/Desktop/PROJETO_SD_2019/ULA/Mux.bdf" instead of from Quartus II megafunction library
 Info: Found 1 design units, including 1 entities, in source file mux.bdf
     Info: Found entity 1: Mux
+Info: Found 1 design units, including 1 entities, in source file functionxor.bdf
+    Info: Found entity 1: FunctionXOR
+Info: Found 1 design units, including 1 entities, in source file functionand.bdf
+    Info: Found entity 1: FunctionAnd
 Info: Found 1 design units, including 1 entities, in source file maiormenor.bdf
     Info: Found entity 1: MaiorMenor
-Info: Found 1 design units, including 1 entities, in source file fulladder.bdf
-    Info: Found entity 1: fullAdder
+Info: Found 1 design units, including 1 entities, in source file equalssystem.bdf
+    Info: Found entity 1: EqualsSystem
+Info: Found 1 design units, including 1 entities, in source file equalsbox.bdf
+    Info: Found entity 1: EqualsBox
 Info: Found 1 design units, including 1 entities, in source file complemento2.bdf
     Info: Found entity 1: complemento2
 Info: Found 1 design units, including 1 entities, in source file addsub.bdf
     Info: Found entity 1: AddSub
-Info: Found 1 design units, including 1 entities, in source file functionand.bdf
-    Info: Found entity 1: FunctionAnd
-Info: Found 1 design units, including 1 entities, in source file functionxor.bdf
-    Info: Found entity 1: FunctionXOR
-Info: Found 1 design units, including 1 entities, in source file equalsbox.bdf
-    Info: Found entity 1: EqualsBox
-Info: Found 1 design units, including 1 entities, in source file equalssystem.bdf
-    Info: Found entity 1: EqualsSystem
-Info: Found 1 design units, including 1 entities, in source file ula.bdf
-    Info: Found entity 1: ULA
-Info: Found 1 design units, including 1 entities, in source file displayula.bdf
-    Info: Found entity 1: DisplayULA
-Info: Found 1 design units, including 1 entities, in source file displaya.bdf
-    Info: Found entity 1: DisplayA
-Info: Found 1 design units, including 1 entities, in source file displayb.bdf
-    Info: Found entity 1: DisplayB
-Info: Found 1 design units, including 1 entities, in source file displayc.bdf
-    Info: Found entity 1: DisplayC
-Info: Found 1 design units, including 1 entities, in source file displayd.bdf
-    Info: Found entity 1: DisplayD
-Info: Found 1 design units, including 1 entities, in source file displaye.bdf
-    Info: Found entity 1: DisplayE
-Info: Found 1 design units, including 1 entities, in source file displayf.bdf
-    Info: Found entity 1: DisplayF
-Info: Found 1 design units, including 1 entities, in source file displayg.bdf
-    Info: Found entity 1: DisplayG
-Info: Found 1 design units, including 1 entities, in source file somadorbcd.bdf
-    Info: Found entity 1: SomadorBCD
-Info: Found 1 design units, including 1 entities, in source file bcd.bdf
-    Info: Found entity 1: BCD
-Info: Found 1 design units, including 1 entities, in source file displaybcd.bdf
-    Info: Found entity 1: DisplayBCD
-Info: Found 1 design units, including 1 entities, in source file displaybcdcompleto.bdf
-    Info: Found entity 1: DisplayBCDCOMPLETO
-Info: Elaborating entity "DisplayBCDCOMPLETO" for the top level hierarchy
-Info: Elaborating entity "DisplayBCD" for hierarchy "DisplayBCD:inst"
-Warning: Primitive "NOT" of instance "inst" not used
-Warning: Output pins are stuck at VCC or GND
-    Warning (13410): Pin "Overflow[6]" is stuck at GND
-    Warning (13410): Pin "Overflow[5]" is stuck at VCC
-    Warning (13410): Pin "Overflow[4]" is stuck at VCC
-    Warning (13410): Pin "Overflow[3]" is stuck at VCC
-    Warning (13410): Pin "Overflow[2]" is stuck at VCC
-Info: Implemented 26 device resources after synthesis - the final resource count might be different
-    Info: Implemented 5 input pins
-    Info: Implemented 14 output pins
-    Info: Implemented 7 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 278 megabytes
-    Info: Processing ended: Thu May 02 13:16:10 2019
-    Info: Elapsed time: 00:00:02
+Info: Found 1 design units, including 1 entities, in source file fulladder.bdf
+    Info: Found entity 1: fullAdder
+Info: Elaborating entity "FunctionXOR" for the top level hierarchy
+Info: Implemented 16 device resources after synthesis - the final resource count might be different
+    Info: Implemented 8 input pins
+    Info: Implemented 4 output pins
+    Info: Implemented 4 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 345 megabytes
+    Info: Processing ended: Thu May 02 17:17:36 2019
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:02
 
 

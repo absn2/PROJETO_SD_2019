@@ -485,41 +485,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "D[6]" (rect 210 632 231 644)(font "Arial" ))
-	(pt 200 648)
-	(pt 248 648)
-)
-(connector
-	(text "d[5]" (rect 210 536 228 548)(font "Arial" ))
-	(pt 200 552)
-	(pt 248 552)
-)
-(connector
-	(text "D[4]" (rect 210 440 231 452)(font "Arial" ))
-	(pt 200 456)
-	(pt 248 456)
-)
-(connector
-	(text "D[3]" (rect 210 344 231 356)(font "Arial" ))
-	(pt 200 360)
-	(pt 248 360)
-)
-(connector
-	(text "D[2]" (rect 210 248 231 260)(font "Arial" ))
-	(pt 200 264)
-	(pt 248 264)
-)
-(connector
-	(text "D[1]" (rect 210 152 231 164)(font "Arial" ))
-	(pt 200 168)
-	(pt 248 168)
-)
-(connector
-	(text "D[0]" (rect 210 56 231 68)(font "Arial" ))
-	(pt 200 72)
-	(pt 248 72)
-)
-(connector
 	(text "S[3]" (rect 218 -40 238 -28)(font "Arial" ))
 	(pt 56 -24)
 	(pt 328 -24)
@@ -548,11 +513,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "M[6]" (rect 402 -32 423 -20)(font "Arial" ))
-	(pt 392 -16)
-	(pt 424 -16)
-)
-(connector
 	(pt 424 64)
 	(pt 424 -16)
 	(bus)
@@ -576,36 +536,6 @@ applicable agreement for further details.
 	(pt 424 336)
 	(pt 424 440)
 	(bus)
-)
-(connector
-	(text "M[5]" (rect 346 48 367 60)(font "Arial" ))
-	(pt 336 64)
-	(pt 424 64)
-)
-(connector
-	(text "M[4]" (rect 354 112 375 124)(font "Arial" ))
-	(pt 344 128)
-	(pt 424 128)
-)
-(connector
-	(text "M[3]" (rect 362 224 383 236)(font "Arial" ))
-	(pt 352 240)
-	(pt 424 240)
-)
-(connector
-	(text "M[2]" (rect 362 320 383 332)(font "Arial" ))
-	(pt 352 336)
-	(pt 424 336)
-)
-(connector
-	(text "M[1]" (rect 354 424 375 436)(font "Arial" ))
-	(pt 344 440)
-	(pt 424 440)
-)
-(connector
-	(text "M[0]" (rect 346 512 367 524)(font "Arial" ))
-	(pt 336 528)
-	(pt 424 528)
 )
 (connector
 	(pt 248 552)
@@ -626,6 +556,76 @@ applicable agreement for further details.
 	(pt 424 528)
 	(pt 424 720)
 	(bus)
+)
+(connector
+	(text "Numero[6]" (rect 202 632 253 644)(font "Arial" ))
+	(pt 200 648)
+	(pt 248 648)
+)
+(connector
+	(text "Numero[5]" (rect 202 536 253 548)(font "Arial" ))
+	(pt 200 552)
+	(pt 248 552)
+)
+(connector
+	(text "Numero[4]" (rect 202 440 253 452)(font "Arial" ))
+	(pt 200 456)
+	(pt 248 456)
+)
+(connector
+	(text "Numero[3]" (rect 202 344 253 356)(font "Arial" ))
+	(pt 200 360)
+	(pt 248 360)
+)
+(connector
+	(text "Numero[2]" (rect 202 248 253 260)(font "Arial" ))
+	(pt 200 264)
+	(pt 248 264)
+)
+(connector
+	(text "Numero[1]" (rect 202 152 253 164)(font "Arial" ))
+	(pt 200 168)
+	(pt 248 168)
+)
+(connector
+	(text "Numero[0]" (rect 202 56 253 68)(font "Arial" ))
+	(pt 200 72)
+	(pt 248 72)
+)
+(connector
+	(text "Sinal[6]" (rect 402 -32 438 -20)(font "Arial" ))
+	(pt 392 -16)
+	(pt 424 -16)
+)
+(connector
+	(text "Sinal[5]" (rect 346 48 382 60)(font "Arial" ))
+	(pt 336 64)
+	(pt 424 64)
+)
+(connector
+	(text "Sinal[4]" (rect 354 112 390 124)(font "Arial" ))
+	(pt 344 128)
+	(pt 424 128)
+)
+(connector
+	(text "Sinal[3]" (rect 362 224 398 236)(font "Arial" ))
+	(pt 352 240)
+	(pt 424 240)
+)
+(connector
+	(text "Sinal[0]" (rect 346 512 382 524)(font "Arial" ))
+	(pt 336 528)
+	(pt 424 528)
+)
+(connector
+	(text "Sinal[1]" (rect 354 424 390 436)(font "Arial" ))
+	(pt 344 440)
+	(pt 424 440)
+)
+(connector
+	(text "Sinal[2]" (rect 362 320 398 332)(font "Arial" ))
+	(pt 352 336)
+	(pt 424 336)
 )
 (junction (pt 56 72))
 (junction (pt 56 168))
