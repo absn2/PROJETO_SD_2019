@@ -38,7 +38,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 920 312 1096 328)
+	(rect 1192 304 1368 320)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "F" (rect 90 0 97 12)(font "Arial" ))
 	(pt 0 8)
@@ -324,7 +324,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 792 248 896 360)
+	(rect 888 240 992 352)
 	(text "OR5" (rect 39 -1 67 15)(font "Courier New" (font_size 10)(bold)))
 	(text "inst10" (rect 3 101 32 113)(font "Arial" ))
 	(port
@@ -374,6 +374,31 @@ applicable agreement for further details.
 		(line (pt 16 16)(pt 88 16)(line_width 1))
 		(line (pt 16 96)(pt 16 16)(line_width 1))
 		(line (pt 88 96)(pt 88 16)(line_width 1))
+	)
+)
+(symbol
+	(rect 1000 296 1048 328)
+	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
+	(text "inst8" (rect 3 21 26 33)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 13 16)(line_width 1))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(line (pt 39 16)(pt 48 16)(line_width 1))
+	)
+	(drawing
+		(line (pt 13 25)(pt 13 7)(line_width 1))
+		(line (pt 13 7)(pt 31 16)(line_width 1))
+		(line (pt 13 25)(pt 31 16)(line_width 1))
+		(circle (rect 31 12 39 20)(line_width 1))
 	)
 )
 (connector
@@ -574,38 +599,6 @@ applicable agreement for further details.
 	(pt 584 480)
 )
 (connector
-	(pt 896 320)
-	(pt 920 320)
-)
-(connector
-	(pt 720 192)
-	(pt 792 192)
-)
-(connector
-	(pt 792 192)
-	(pt 792 272)
-)
-(connector
-	(pt 720 256)
-	(pt 784 256)
-)
-(connector
-	(pt 784 256)
-	(pt 784 288)
-)
-(connector
-	(pt 784 288)
-	(pt 792 288)
-)
-(connector
-	(pt 760 320)
-	(pt 760 304)
-)
-(connector
-	(pt 760 304)
-	(pt 792 304)
-)
-(connector
 	(pt 720 320)
 	(pt 760 320)
 )
@@ -614,20 +607,56 @@ applicable agreement for further details.
 	(pt 768 376)
 )
 (connector
+	(pt 720 256)
+	(pt 880 256)
+)
+(connector
+	(pt 888 192)
+	(pt 888 264)
+)
+(connector
+	(pt 760 320)
+	(pt 760 296)
+)
+(connector
 	(pt 768 376)
-	(pt 768 320)
+	(pt 768 312)
 )
 (connector
-	(pt 768 320)
-	(pt 792 320)
+	(pt 888 432)
+	(pt 888 328)
 )
 (connector
-	(pt 792 432)
-	(pt 792 336)
+	(pt 880 280)
+	(pt 888 280)
+)
+(connector
+	(pt 760 296)
+	(pt 888 296)
+)
+(connector
+	(pt 768 312)
+	(pt 888 312)
+)
+(connector
+	(pt 880 256)
+	(pt 880 280)
+)
+(connector
+	(pt 720 192)
+	(pt 888 192)
 )
 (connector
 	(pt 720 432)
-	(pt 792 432)
+	(pt 888 432)
+)
+(connector
+	(pt 992 312)
+	(pt 1000 312)
+)
+(connector
+	(pt 1048 312)
+	(pt 1192 312)
 )
 (junction (pt 184 64))
 (junction (pt 184 32))

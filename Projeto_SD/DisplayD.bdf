@@ -38,7 +38,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 864 240 1040 256)
+	(rect 1096 240 1272 256)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "D" (rect 90 0 98 12)(font "Arial" ))
 	(pt 0 8)
@@ -221,7 +221,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 744 224 808 272)
+	(rect 816 224 880 272)
 	(text "OR2" (rect 1 0 19 10)(font "Arial" (font_size 6)))
 	(text "inst6" (rect 3 37 26 49)(font "Arial" ))
 	(port
@@ -251,6 +251,31 @@ applicable agreement for further details.
 		(arc (pt 7 29)(pt 7 19)(rect -14 8 19 41)(line_width 1))
 		(arc (pt 49 24)(pt 25 13)(rect -6 13 57 76)(line_width 1))
 		(arc (pt 25 35)(pt 49 24)(rect -6 -27 57 36)(line_width 1))
+	)
+)
+(symbol
+	(rect 880 232 928 264)
+	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
+	(text "inst7" (rect 3 21 26 33)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 13 16)(line_width 1))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(line (pt 39 16)(pt 48 16)(line_width 1))
+	)
+	(drawing
+		(line (pt 13 25)(pt 13 7)(line_width 1))
+		(line (pt 13 7)(pt 31 16)(line_width 1))
+		(line (pt 13 25)(pt 31 16)(line_width 1))
+		(circle (rect 31 12 39 20)(line_width 1))
 	)
 )
 (connector
@@ -340,28 +365,8 @@ applicable agreement for further details.
 	(pt 728 224)
 )
 (connector
-	(pt 728 224)
-	(pt 728 240)
-)
-(connector
-	(pt 744 240)
-	(pt 728 240)
-)
-(connector
 	(pt 704 272)
 	(pt 728 272)
-)
-(connector
-	(pt 728 272)
-	(pt 728 256)
-)
-(connector
-	(pt 728 256)
-	(pt 744 256)
-)
-(connector
-	(pt 808 248)
-	(pt 864 248)
 )
 (connector
 	(pt 208 192)
@@ -421,6 +426,26 @@ applicable agreement for further details.
 (connector
 	(pt 608 280)
 	(pt 608 312)
+)
+(connector
+	(pt 728 224)
+	(pt 728 240)
+)
+(connector
+	(pt 728 272)
+	(pt 728 256)
+)
+(connector
+	(pt 728 256)
+	(pt 816 256)
+)
+(connector
+	(pt 728 240)
+	(pt 816 240)
+)
+(connector
+	(pt 928 248)
+	(pt 1096 248)
 )
 (junction (pt 176 72))
 (junction (pt 176 40))

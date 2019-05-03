@@ -1,5 +1,5 @@
 Analysis & Synthesis report for somadorSubtrador
-Fri May 03 14:33:53 2019
+Fri May 03 15:43:42 2019
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -40,16 +40,16 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +-------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status   ; Successful - Fri May 03 14:33:53 2019        ;
+; Analysis & Synthesis Status   ; Successful - Fri May 03 15:43:42 2019        ;
 ; Quartus II Version            ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                 ; somadorSubtrador                             ;
-; Top-level Entity Name         ; BCD                                          ;
+; Top-level Entity Name         ; ULA                                          ;
 ; Family                        ; Stratix II                                   ;
 ; Logic utilization             ; N/A                                          ;
-;     Combinational ALUTs       ; 15                                           ;
+;     Combinational ALUTs       ; 32                                           ;
 ;     Dedicated logic registers ; 0                                            ;
 ; Total registers               ; 0                                            ;
-; Total pins                    ; 23                                           ;
+; Total pins                    ; 27                                           ;
 ; Total virtual pins            ; 0                                            ;
 ; Total block memory bits       ; 0                                            ;
 ; DSP block 9-bit elements      ; 0                                            ;
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; BCD                ; somadorSubtrador   ;
+; Top-level entity name                                                      ; ULA                ; somadorSubtrador   ;
 ; Family name                                                                ; Stratix II         ; Cyclone IV GX      ;
 ; Use Generated Physical Constraints File                                    ; Off                ;                    ;
 ; Synchronization Register Chain Length                                      ; 2                  ; 3                  ;
@@ -155,73 +155,95 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                             ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                             ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------+
-; BCD.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/absn2/Desktop/PROJETO_SD_2019/Projeto_SD/BCD.bdf                ;
-; DisplayBCDCOMPLETO.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/absn2/Desktop/PROJETO_SD_2019/Projeto_SD/DisplayBCDCOMPLETO.bdf ;
-; DisplayBCD.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/absn2/Desktop/PROJETO_SD_2019/Projeto_SD/DisplayBCD.bdf         ;
-; SomadorBCD.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/absn2/Desktop/PROJETO_SD_2019/Projeto_SD/SomadorBCD.bdf         ;
-; fullAdder.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/absn2/Desktop/PROJETO_SD_2019/Projeto_SD/fullAdder.bdf          ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                       ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                       ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------+
+; ULA.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/absn2/Desktop/PROJETO_SD_2019/Projeto_SD/ULA.bdf          ;
+; DisplayULA.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/absn2/Desktop/PROJETO_SD_2019/Projeto_SD/DisplayULA.bdf   ;
+; DisplayG.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/absn2/Desktop/PROJETO_SD_2019/Projeto_SD/DisplayG.bdf     ;
+; DisplayF.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/absn2/Desktop/PROJETO_SD_2019/Projeto_SD/DisplayF.bdf     ;
+; DisplayE.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/absn2/Desktop/PROJETO_SD_2019/Projeto_SD/DisplayE.bdf     ;
+; DisplayD.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/absn2/Desktop/PROJETO_SD_2019/Projeto_SD/DisplayD.bdf     ;
+; DisplayC.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/absn2/Desktop/PROJETO_SD_2019/Projeto_SD/DisplayC.bdf     ;
+; DisplayB.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/absn2/Desktop/PROJETO_SD_2019/Projeto_SD/DisplayB.bdf     ;
+; DisplayA.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/absn2/Desktop/PROJETO_SD_2019/Projeto_SD/DisplayA.bdf     ;
+; Mux.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/absn2/Desktop/PROJETO_SD_2019/Projeto_SD/Mux.bdf          ;
+; FunctionXOR.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/absn2/Desktop/PROJETO_SD_2019/Projeto_SD/FunctionXOR.bdf  ;
+; FunctionAnd.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/absn2/Desktop/PROJETO_SD_2019/Projeto_SD/FunctionAnd.bdf  ;
+; MaiorMenor.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/absn2/Desktop/PROJETO_SD_2019/Projeto_SD/MaiorMenor.bdf   ;
+; EqualsSystem.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/absn2/Desktop/PROJETO_SD_2019/Projeto_SD/EqualsSystem.bdf ;
+; EqualsBox.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/absn2/Desktop/PROJETO_SD_2019/Projeto_SD/EqualsBox.bdf    ;
+; complemento2.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/absn2/Desktop/PROJETO_SD_2019/Projeto_SD/complemento2.bdf ;
+; AddSub.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/absn2/Desktop/PROJETO_SD_2019/Projeto_SD/AddSub.bdf       ;
+; fullAdder.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/absn2/Desktop/PROJETO_SD_2019/Projeto_SD/fullAdder.bdf    ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                             ;
-+-----------------------------------------------+-----------------------------------------+
-; Resource                                      ; Usage                                   ;
-+-----------------------------------------------+-----------------------------------------+
-; Estimated ALUTs Used                          ; 15                                      ;
-; Dedicated logic registers                     ; 0                                       ;
-;                                               ;                                         ;
-; Estimated ALUTs Unavailable                   ; 2                                       ;
-;                                               ;                                         ;
-; Total combinational functions                 ; 15                                      ;
-; Combinational ALUT usage by number of inputs  ;                                         ;
-;     -- 7 input functions                      ; 0                                       ;
-;     -- 6 input functions                      ; 2                                       ;
-;     -- 5 input functions                      ; 9                                       ;
-;     -- 4 input functions                      ; 3                                       ;
-;     -- <=3 input functions                    ; 1                                       ;
-;                                               ;                                         ;
-; Combinational ALUTs by mode                   ;                                         ;
-;     -- normal mode                            ; 15                                      ;
-;     -- extended LUT mode                      ; 0                                       ;
-;     -- arithmetic mode                        ; 0                                       ;
-;     -- shared arithmetic mode                 ; 0                                       ;
-;                                               ;                                         ;
-; Estimated ALUT/register pairs used            ; 17                                      ;
-;                                               ;                                         ;
-; Total registers                               ; 0                                       ;
-;     -- Dedicated logic registers              ; 0                                       ;
-;     -- I/O registers                          ; 0                                       ;
-;                                               ;                                         ;
-; Estimated ALMs:  partially or completely used ; 9                                       ;
-;                                               ;                                         ;
-; I/O pins                                      ; 23                                      ;
-; Maximum fan-out node                          ; SomadorBCD:inst|fullAdder:inst5|inst7~0 ;
-; Maximum fan-out                               ; 8                                       ;
-; Total fan-out                                 ; 83                                      ;
-; Average fan-out                               ; 2.18                                    ;
-+-----------------------------------------------+-----------------------------------------+
++-------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary           ;
++-----------------------------------------------+-------+
+; Resource                                      ; Usage ;
++-----------------------------------------------+-------+
+; Estimated ALUTs Used                          ; 32    ;
+; Dedicated logic registers                     ; 0     ;
+;                                               ;       ;
+; Estimated ALUTs Unavailable                   ; 8     ;
+;                                               ;       ;
+; Total combinational functions                 ; 32    ;
+; Combinational ALUT usage by number of inputs  ;       ;
+;     -- 7 input functions                      ; 1     ;
+;     -- 6 input functions                      ; 7     ;
+;     -- 5 input functions                      ; 9     ;
+;     -- 4 input functions                      ; 12    ;
+;     -- <=3 input functions                    ; 3     ;
+;                                               ;       ;
+; Combinational ALUTs by mode                   ;       ;
+;     -- normal mode                            ; 31    ;
+;     -- extended LUT mode                      ; 1     ;
+;     -- arithmetic mode                        ; 0     ;
+;     -- shared arithmetic mode                 ; 0     ;
+;                                               ;       ;
+; Estimated ALUT/register pairs used            ; 40    ;
+;                                               ;       ;
+; Total registers                               ; 0     ;
+;     -- Dedicated logic registers              ; 0     ;
+;     -- I/O registers                          ; 0     ;
+;                                               ;       ;
+; Estimated ALMs:  partially or completely used ; 20    ;
+;                                               ;       ;
+; I/O pins                                      ; 27    ;
+; Maximum fan-out node                          ; S[0]  ;
+; Maximum fan-out                               ; 11    ;
+; Total fan-out                                 ; 159   ;
+; Average fan-out                               ; 2.69  ;
++-----------------------------------------------+-------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                        ;
-+-------------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------------+--------------+
-; Compilation Hierarchy Node    ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                           ; Library Name ;
-+-------------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------------+--------------+
-; |BCD                          ; 15 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 23   ; 0            ; |BCD                                          ; work         ;
-;    |DisplayBCDCOMPLETO:inst1| ; 7 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BCD|DisplayBCDCOMPLETO:inst1                 ; work         ;
-;       |DisplayBCD:inst|       ; 7 (7)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BCD|DisplayBCDCOMPLETO:inst1|DisplayBCD:inst ; work         ;
-;    |SomadorBCD:inst|          ; 8 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BCD|SomadorBCD:inst                          ;              ;
-;       |fullAdder:inst2|       ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BCD|SomadorBCD:inst|fullAdder:inst2          ; work         ;
-;       |fullAdder:inst3|       ; 2 (2)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BCD|SomadorBCD:inst|fullAdder:inst3          ; work         ;
-;       |fullAdder:inst4|       ; 2 (2)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BCD|SomadorBCD:inst|fullAdder:inst4          ; work         ;
-;       |fullAdder:inst5|       ; 2 (2)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BCD|SomadorBCD:inst|fullAdder:inst5          ; work         ;
-+-------------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                  ;
++----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+--------------------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                        ; Library Name ;
++----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+--------------------------------------------+--------------+
+; |ULA                       ; 32 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 27   ; 0            ; |ULA                                       ; work         ;
+;    |DisplayULA:inst1|      ; 7 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ULA|DisplayULA:inst1                      ; work         ;
+;       |DisplayA:inst|      ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ULA|DisplayULA:inst1|DisplayA:inst        ; work         ;
+;       |DisplayB:inst1|     ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ULA|DisplayULA:inst1|DisplayB:inst1       ; work         ;
+;       |DisplayC:inst2|     ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ULA|DisplayULA:inst1|DisplayC:inst2       ; work         ;
+;       |DisplayD:inst3|     ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ULA|DisplayULA:inst1|DisplayD:inst3       ; work         ;
+;       |DisplayE:inst4|     ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ULA|DisplayULA:inst1|DisplayE:inst4       ; work         ;
+;       |DisplayF:inst5|     ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ULA|DisplayULA:inst1|DisplayF:inst5       ; work         ;
+;       |DisplayG:inst6|     ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ULA|DisplayULA:inst1|DisplayG:inst6       ; work         ;
+;    |Mux:inst|              ; 25 (20)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ULA|Mux:inst                              ;              ;
+;       |AddSub:inst3|       ; 2 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ULA|Mux:inst|AddSub:inst3                 ; work         ;
+;          |fullAdder:inst1| ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ULA|Mux:inst|AddSub:inst3|fullAdder:inst1 ; work         ;
+;          |fullAdder:inst5| ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ULA|Mux:inst|AddSub:inst3|fullAdder:inst5 ; work         ;
+;       |AddSub:inst6|       ; 2 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ULA|Mux:inst|AddSub:inst6                 ; work         ;
+;          |fullAdder:inst1| ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ULA|Mux:inst|AddSub:inst6|fullAdder:inst1 ; work         ;
+;          |fullAdder:inst5| ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ULA|Mux:inst|AddSub:inst6|fullAdder:inst5 ; work         ;
+;       |complemento2:inst4| ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ULA|Mux:inst|complemento2:inst4           ; work         ;
++----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+--------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -246,7 +268,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Fri May 03 14:33:49 2019
+    Info: Processing started: Fri May 03 15:43:40 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off projetoSD -c somadorSubtrador
 Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info: Found 1 design units, including 1 entities, in source file bcd.bdf
@@ -294,24 +316,44 @@ Info: Found 1 design units, including 1 entities, in source file addsub.bdf
     Info: Found entity 1: AddSub
 Info: Found 1 design units, including 1 entities, in source file fulladder.bdf
     Info: Found entity 1: fullAdder
-Info: Elaborating entity "BCD" for the top level hierarchy
-Info: Elaborating entity "SomadorBCD" for hierarchy "SomadorBCD:inst"
-Info: Elaborating entity "fullAdder" for hierarchy "SomadorBCD:inst|fullAdder:inst5"
-Info: Elaborating entity "DisplayBCDCOMPLETO" for hierarchy "DisplayBCDCOMPLETO:inst1"
-Info: Elaborating entity "DisplayBCD" for hierarchy "DisplayBCDCOMPLETO:inst1|DisplayBCD:inst"
+Info: Elaborating entity "ULA" for the top level hierarchy
+Info: Elaborating entity "Mux" for hierarchy "Mux:inst"
+Info: Elaborating entity "MaiorMenor" for hierarchy "Mux:inst|MaiorMenor:inst7"
+Info: Elaborating entity "EqualsSystem" for hierarchy "Mux:inst|EqualsSystem:inst5"
+Info: Elaborating entity "EqualsBox" for hierarchy "Mux:inst|EqualsSystem:inst5|EqualsBox:inst1"
+Info: Elaborating entity "AddSub" for hierarchy "Mux:inst|AddSub:inst3"
+Info: Elaborating entity "fullAdder" for hierarchy "Mux:inst|AddSub:inst3|fullAdder:inst5"
+Info: Elaborating entity "complemento2" for hierarchy "Mux:inst|complemento2:inst4"
+Info: Elaborating entity "FunctionAnd" for hierarchy "Mux:inst|FunctionAnd:inst2"
+Info: Elaborating entity "FunctionXOR" for hierarchy "Mux:inst|FunctionXOR:inst1"
+Info: Elaborating entity "DisplayULA" for hierarchy "DisplayULA:inst1"
+Info: Elaborating entity "DisplayG" for hierarchy "DisplayULA:inst1|DisplayG:inst6"
 Warning: Primitive "NOT" of instance "inst" not used
+Info: Elaborating entity "DisplayF" for hierarchy "DisplayULA:inst1|DisplayF:inst5"
+Info: Elaborating entity "DisplayE" for hierarchy "DisplayULA:inst1|DisplayE:inst4"
+Info: Elaborating entity "DisplayD" for hierarchy "DisplayULA:inst1|DisplayD:inst3"
+Warning: Primitive "NOT" of instance "inst" not used
+Warning: Primitive "NOT" of instance "inst3" not used
+Info: Elaborating entity "DisplayC" for hierarchy "DisplayULA:inst1|DisplayC:inst2"
+Warning: Primitive "NOT" of instance "inst" not used
+Info: Elaborating entity "DisplayB" for hierarchy "DisplayULA:inst1|DisplayB:inst1"
+Warning: Primitive "NOT" of instance "inst2" not used
+Info: Elaborating entity "DisplayA" for hierarchy "DisplayULA:inst1|DisplayA:inst"
 Warning: Output pins are stuck at VCC or GND
-    Warning (13410): Pin "Display1[6]" is stuck at GND
-    Warning (13410): Pin "Display1[1]" is stuck at VCC
-    Warning (13410): Pin "Display1[0]" is stuck at VCC
-Info: Implemented 38 device resources after synthesis - the final resource count might be different
-    Info: Implemented 8 input pins
-    Info: Implemented 15 output pins
-    Info: Implemented 15 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Warning (13410): Pin "Sinal[5]" is stuck at VCC
+    Warning (13410): Pin "Sinal[4]" is stuck at VCC
+    Warning (13410): Pin "Sinal[3]" is stuck at VCC
+    Warning (13410): Pin "Sinal[2]" is stuck at VCC
+    Warning (13410): Pin "Sinal[1]" is stuck at VCC
+    Warning (13410): Pin "Sinal[0]" is stuck at VCC
+Info: Implemented 59 device resources after synthesis - the final resource count might be different
+    Info: Implemented 11 input pins
+    Info: Implemented 16 output pins
+    Info: Implemented 32 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 13 warnings
     Info: Peak virtual memory: 278 megabytes
-    Info: Processing ended: Fri May 03 14:33:53 2019
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Processing ended: Fri May 03 15:43:43 2019
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
 
 
