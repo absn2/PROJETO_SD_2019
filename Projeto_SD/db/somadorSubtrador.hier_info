@@ -1,0 +1,175 @@
+|BCD
+Overflow <= SomadorBCD:inst.Overflow
+A[0] => SomadorBCD:inst.A[0]
+A[1] => SomadorBCD:inst.A[1]
+A[2] => SomadorBCD:inst.A[2]
+A[3] => SomadorBCD:inst.A[3]
+B[0] => SomadorBCD:inst.B[0]
+B[1] => SomadorBCD:inst.B[1]
+B[2] => SomadorBCD:inst.B[2]
+B[3] => SomadorBCD:inst.B[3]
+Display1[0] <= DisplayBCDCOMPLETO:inst1.Overflow[0]
+Display1[1] <= DisplayBCDCOMPLETO:inst1.Overflow[1]
+Display1[2] <= DisplayBCDCOMPLETO:inst1.Overflow[2]
+Display1[3] <= DisplayBCDCOMPLETO:inst1.Overflow[3]
+Display1[4] <= DisplayBCDCOMPLETO:inst1.Overflow[4]
+Display1[5] <= DisplayBCDCOMPLETO:inst1.Overflow[5]
+Display1[6] <= DisplayBCDCOMPLETO:inst1.Overflow[6]
+Display2[0] <= DisplayBCDCOMPLETO:inst1.Numero[0]
+Display2[1] <= DisplayBCDCOMPLETO:inst1.Numero[1]
+Display2[2] <= DisplayBCDCOMPLETO:inst1.Numero[2]
+Display2[3] <= DisplayBCDCOMPLETO:inst1.Numero[3]
+Display2[4] <= DisplayBCDCOMPLETO:inst1.Numero[4]
+Display2[5] <= DisplayBCDCOMPLETO:inst1.Numero[5]
+Display2[6] <= DisplayBCDCOMPLETO:inst1.Numero[6]
+
+
+|BCD|SomadorBCD:inst
+Overflow <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => fullAdder:inst2.A
+A[1] => fullAdder:inst3.A
+A[2] => fullAdder:inst4.A
+A[3] => fullAdder:inst5.A
+B[0] => fullAdder:inst2.B
+B[1] => fullAdder:inst3.B
+B[2] => fullAdder:inst4.B
+B[3] => fullAdder:inst5.B
+S[0] <= fullAdder:inst2.S
+S[1] <= fullAdder:inst6.S
+S[2] <= fullAdder:inst11.S
+S[3] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BCD|SomadorBCD:inst|fullAdder:inst5
+S <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst6.IN0
+A => inst4.IN1
+B => inst2.IN1
+B => inst6.IN1
+B => inst4.IN0
+CI => inst3.IN1
+CI => inst5.IN1
+CO <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BCD|SomadorBCD:inst|fullAdder:inst4
+S <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst6.IN0
+A => inst4.IN1
+B => inst2.IN1
+B => inst6.IN1
+B => inst4.IN0
+CI => inst3.IN1
+CI => inst5.IN1
+CO <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BCD|SomadorBCD:inst|fullAdder:inst3
+S <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst6.IN0
+A => inst4.IN1
+B => inst2.IN1
+B => inst6.IN1
+B => inst4.IN0
+CI => inst3.IN1
+CI => inst5.IN1
+CO <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BCD|SomadorBCD:inst|fullAdder:inst2
+S <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst6.IN0
+A => inst4.IN1
+B => inst2.IN1
+B => inst6.IN1
+B => inst4.IN0
+CI => inst3.IN1
+CI => inst5.IN1
+CO <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BCD|SomadorBCD:inst|fullAdder:inst6
+S <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst6.IN0
+A => inst4.IN1
+B => inst2.IN1
+B => inst6.IN1
+B => inst4.IN0
+CI => inst3.IN1
+CI => inst5.IN1
+CO <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BCD|SomadorBCD:inst|fullAdder:inst11
+S <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst6.IN0
+A => inst4.IN1
+B => inst2.IN1
+B => inst6.IN1
+B => inst4.IN0
+CI => inst3.IN1
+CI => inst5.IN1
+CO <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BCD|DisplayBCDCOMPLETO:inst1
+Numero[0] <= DisplayBCD:inst.D[0]
+Numero[1] <= DisplayBCD:inst.D[1]
+Numero[2] <= DisplayBCD:inst.D[2]
+Numero[3] <= DisplayBCD:inst.D[3]
+Numero[4] <= DisplayBCD:inst.D[4]
+Numero[5] <= DisplayBCD:inst.D[5]
+Numero[6] <= DisplayBCD:inst.D[6]
+S[0] => DisplayBCD:inst.S[0]
+S[1] => DisplayBCD:inst.S[1]
+S[2] => DisplayBCD:inst.S[2]
+S[3] => DisplayBCD:inst.S[3]
+Overflow[0] <= <VCC>
+Overflow[1] <= <VCC>
+Overflow[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Overflow[3] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+Overflow[4] <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+Overflow[5] <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+Overflow[6] <= <GND>
+A => inst1.IN0
+
+
+|BCD|DisplayBCDCOMPLETO:inst1|DisplayBCD:inst
+D[0] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+D[1] <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+D[2] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+D[3] <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+D[4] <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+D[5] <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+D[6] <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+S[0] => inst3.IN0
+S[0] => inst22.IN1
+S[0] => inst12.IN2
+S[0] => inst7.IN1
+S[0] => inst6.IN1
+S[1] => inst25.IN1
+S[1] => inst2.IN0
+S[1] => inst26.IN0
+S[1] => inst24.IN1
+S[1] => inst15.IN0
+S[1] => inst11.IN0
+S[1] => inst10.IN1
+S[1] => inst6.IN0
+S[2] => inst1.IN0
+S[2] => inst28.IN0
+S[2] => inst22.IN0
+S[2] => inst19.IN0
+S[2] => inst18.IN0
+S[2] => inst12.IN0
+S[2] => inst7.IN2
+S[3] => inst27.IN2
+S[3] => inst24.IN2
+S[3] => inst21.IN2
+
+
