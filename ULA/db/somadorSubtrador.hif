@@ -1,0 +1,399 @@
+Quartus II 64-Bit
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+7
+3700
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+AddSub
+# storage
+db|somadorSubtrador.(1).cnf
+db|somadorSubtrador.(1).cnf
+# case_insensitive
+# source_file
+addsub.bdf
+e6ab97529d12875ee112804ac03e262
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Mux:inst|AddSub:inst3
+Mux:inst|AddSub:inst6
+}
+# macro_sequence
+
+# end
+# entity
+Mux
+# storage
+db|somadorSubtrador.(0).cnf
+db|somadorSubtrador.(0).cnf
+# case_insensitive
+# source_file
+mux.bdf
+82fed2c6401c4ca5dd14ed9331066cb
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Mux:inst
+}
+# macro_sequence
+
+# end
+# entity
+MaiorMenor
+# storage
+db|somadorSubtrador.(3).cnf
+db|somadorSubtrador.(3).cnf
+# case_insensitive
+# source_file
+maiormenor.bdf
+9721d16d5fceb229f575974945b8ec8c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Mux:inst|MaiorMenor:inst7
+Mux:inst|MaiorMenor:inst
+}
+# macro_sequence
+
+# end
+# entity
+EqualsSystem
+# storage
+db|somadorSubtrador.(4).cnf
+db|somadorSubtrador.(4).cnf
+# case_insensitive
+# source_file
+equalssystem.bdf
+e48bdbbfadecbaaf7b3d119da199dbde
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Mux:inst|EqualsSystem:inst5
+}
+# macro_sequence
+
+# end
+# entity
+EqualsBox
+# storage
+db|somadorSubtrador.(5).cnf
+db|somadorSubtrador.(5).cnf
+# case_insensitive
+# source_file
+equalsbox.bdf
+618670965c7abbaed15b98af85b4550
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Mux:inst|EqualsSystem:inst5|EqualsBox:inst1
+Mux:inst|EqualsSystem:inst5|EqualsBox:inst3
+Mux:inst|EqualsSystem:inst5|EqualsBox:inst
+Mux:inst|EqualsSystem:inst5|EqualsBox:inst2
+}
+# macro_sequence
+
+# end
+# entity
+fullAdder
+# storage
+db|somadorSubtrador.(6).cnf
+db|somadorSubtrador.(6).cnf
+# case_insensitive
+# source_file
+fulladder.bdf
+2562d0237bdd25654d489709ca29c30
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Mux:inst|AddSub:inst3|fullAdder:inst5
+Mux:inst|AddSub:inst3|fullAdder:inst3
+Mux:inst|AddSub:inst3|fullAdder:inst1
+Mux:inst|AddSub:inst3|fullAdder:inst
+Mux:inst|complemento2:inst4|fullAdder:inst14
+Mux:inst|complemento2:inst4|fullAdder:inst13
+Mux:inst|complemento2:inst4|fullAdder:inst12
+Mux:inst|complemento2:inst4|fullAdder:inst5
+Mux:inst|AddSub:inst6|fullAdder:inst5
+Mux:inst|AddSub:inst6|fullAdder:inst3
+Mux:inst|AddSub:inst6|fullAdder:inst1
+Mux:inst|AddSub:inst6|fullAdder:inst
+}
+# macro_sequence
+
+# end
+# entity
+complemento2
+# storage
+db|somadorSubtrador.(7).cnf
+db|somadorSubtrador.(7).cnf
+# case_insensitive
+# source_file
+complemento2.bdf
+892cd338e9c42d8a7aa4c9f81bc4b40
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Mux:inst|complemento2:inst4
+}
+# macro_sequence
+
+# end
+# entity
+FunctionAnd
+# storage
+db|somadorSubtrador.(8).cnf
+db|somadorSubtrador.(8).cnf
+# case_insensitive
+# source_file
+functionand.bdf
+22783af330f6ccc2771e35e6de9b9eb
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Mux:inst|FunctionAnd:inst2
+}
+# macro_sequence
+
+# end
+# entity
+FunctionXOR
+# storage
+db|somadorSubtrador.(9).cnf
+db|somadorSubtrador.(9).cnf
+# case_insensitive
+# source_file
+functionxor.bdf
+1c65145fa506cd5f2aa6de782b8c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Mux:inst|FunctionXOR:inst1
+}
+# macro_sequence
+
+# end
+# entity
+DisplayG
+# storage
+db|somadorSubtrador.(2).cnf
+db|somadorSubtrador.(2).cnf
+# case_insensitive
+# source_file
+displayg.bdf
+78925ee0da60a925a11a41f77a6d50a4
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+DisplayULA:inst1|DisplayG:inst6
+}
+# macro_sequence
+
+# end
+# entity
+DisplayF
+# storage
+db|somadorSubtrador.(10).cnf
+db|somadorSubtrador.(10).cnf
+# case_insensitive
+# source_file
+displayf.bdf
+e69a21313bcb7ff5f3290201171e7ab
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+DisplayULA:inst1|DisplayF:inst5
+}
+# macro_sequence
+
+# end
+# entity
+DisplayE
+# storage
+db|somadorSubtrador.(11).cnf
+db|somadorSubtrador.(11).cnf
+# case_insensitive
+# source_file
+displaye.bdf
+6d96ab4161e4cca0462b3cf6368f93fa
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+DisplayULA:inst1|DisplayE:inst4
+}
+# macro_sequence
+
+# end
+# entity
+DisplayC
+# storage
+db|somadorSubtrador.(13).cnf
+db|somadorSubtrador.(13).cnf
+# case_insensitive
+# source_file
+displayc.bdf
+456cdc4838a79e61d4813d61207b1511
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+DisplayULA:inst1|DisplayC:inst2
+}
+# macro_sequence
+
+# end
+# entity
+DisplayA
+# storage
+db|somadorSubtrador.(15).cnf
+db|somadorSubtrador.(15).cnf
+# case_insensitive
+# source_file
+displaya.bdf
+7e38562c3eb382d620c8227d17bc2e
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+DisplayULA:inst1|DisplayA:inst
+}
+# macro_sequence
+
+# end
+# entity
+DisplayULA
+# storage
+db|somadorSubtrador.(16).cnf
+db|somadorSubtrador.(16).cnf
+# case_insensitive
+# source_file
+displayula.bdf
+ef73ad4eddc6b89a3419a2cad6e86ae
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+DisplayULA:inst1
+}
+# macro_sequence
+
+# end
+# entity
+ULA
+# storage
+db|somadorSubtrador.(17).cnf
+db|somadorSubtrador.(17).cnf
+# case_insensitive
+# source_file
+ula.bdf
+4c3784538daf785df6bd5373685a7c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+DisplayB
+# storage
+db|somadorSubtrador.(14).cnf
+db|somadorSubtrador.(14).cnf
+# case_insensitive
+# source_file
+displayb.bdf
+54bad51e97daece2a71e7b934ab753b8
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+DisplayULA:inst1|DisplayB:inst1
+}
+# macro_sequence
+
+# end
+# entity
+DisplayD
+# storage
+db|somadorSubtrador.(12).cnf
+db|somadorSubtrador.(12).cnf
+# case_insensitive
+# source_file
+displayd.bdf
+9af9facf8f7cb9b27cc703f664d57
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+DisplayULA:inst1|DisplayD:inst3
+}
+# macro_sequence
+
+# end
+# complete
+
